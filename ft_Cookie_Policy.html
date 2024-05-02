@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIVENCHY</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="js/givenchy.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    
+    <div id="createAccountPanel">
+        <input type="button" value="CLOSE" class='closeBtn'>
+        <fieldset>
+        <legend>CREAT ACCOUNT</legend>
+        <ul>
+            <li>
+                <label for="creatFName">FIRST NAME*</label>
+                <input type="text" id="creatFName">
+            </li>
+            <li>
+                <label for="creatlName">LAST NAME*</label>
+                <input type="text" id="creatlName">
+            </li>
+            <li>
+                <label for="createmail">EMAIL*</label>
+                <input type="email" id="createmail">
+            </li>
+            <li>
+                <label for="creatpassword">PASSWORD*</label>
+                <input type="password" id="creatpassword">
+            </li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>CONSENT TO PERSONAL DATA PROCESSING</legend>
+        <div>
+            <input type="checkbox" id="agreeCheckbox">
+            <label for="agreeCheckbox"> 
+                I agree to the collection and use of my personal data for marketing purposes
+            </label>
+        </div>
+            <input type="checkbox" id="agreetoCheckbox">
+            <label for="agreetoCheckbox">
+                I agree to the collection, disclosure or processing of my personal data for profiling purposes  
+            </label>
+    </fieldset>
+    <input type="button" value="CREAT ACCOUNT" data-panel="createAccountPanel" class="panelBtn">
+    </div>
+
+    <div id="resetPanel"> 
+        <input type="button" value="CLOSE" class="closeBtn">
+            <fieldset>
+                <legend>RESET PASSWORD REQUEST</legend>
+                <P>Provide the e-mail address of your account to receive a password reset e-mail.</P>
+                <div>
+                    <label for="email">EMAIL*</label>
+                    <input type="text" id="email">
+                </div>
+                <span>All fields marked with an * are mandatory</span>
+                <input type="button" value="RESET PASSWORD" class="resetpassword">
+            
+            </fieldset>
+    
+    </div>
+
+    <div id="loginPanel">
+        <fieldset> 
+            <legend>LOGIN</legend>
+            <div class="loginSection">
+                <div>
+                    <label for="loginemail">EMAIL*</label>
+                    <input type="text" id="loginemail" placeholder="Email">
+                </div>
+                <div>
+                    <label for="password">PASSWORD*</label>
+                    <input type="text" id="password" placeholder="Password">
+                </div> 
+            </div>
+            <div class="buttonSection">
+                <div>
+                    <input type="button" value="Forget Password" data-panel="resetPanel" class="panelBtn"> 
+                </div>
+                <div>
+                    <label for="checkbox" class="remember">
+                        Remember me
+                    <input type="checkbox" name="checkbox" id="checkbox"> 
+                    </label>
+                </div>  
+                 <div>
+                    <input type="button" value="LOGIN" data-panel="">
+                </div>
+            </div>
+            <div class="createAccountArea">
+                <h4>CREATE ACCOUNT</h4>
+                <P>- Add your favorite items to your wishlist</P>
+                <P>- Save your contact informations for a faster checkout</P>
+                <P>- Check your order status</P>
+            </div>
+            <div class="btnSection">
+                <div>
+                    <input type="button" value="CREAT ACCOUNT" data-panel="createAccountPanel" class="panelBtn" >
+                </div>
+                    <input type="button" value="CLOSE" class='closeBtn'> 
+            </div>
+        </fieldset>
+    </div>
+
+    <div id="addtobagPanel">
+        <input type="button" value="CLOSE" class='closeBtn'>
+        <div>
+            <h2>Shopping Cart</h2>
+            <form action="p_checkout.html">
+                <div class="cart">
+                    <div class="cart-products">
+                        <div class="product">
+                            <img src="images/wGift_Antigon-aToy_bag_in_Box_leather01.png" alt="Antigon-aToy_bag_in_Box_leather">
+                            <div class="product-info">
+                                <span>New</span>
+                                <p>Medium Voyou Chain bag in leather</p>
+                                <p>Color <span>Red</span></p>
+                                <div class="countComponent">
+                                    <input type="button" value="subtract">
+                                    <span>1</span>
+                                    <input type="button" value="add">
+                                    <p>$2800</p>
+                                </div>
+                                <div class="remove">
+                                    <input type="button" value="Remove" class="btn_remove">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-total">
+                    <div>
+                        <span>SUBTOTAL</span>
+                        <span>$2800</span>
+                    </div>
+                    <div>
+                        <span>TOTAL</span>
+                        <span>$2800</span>
+                    </div>
+                    <a href="p_checkout.html">Process to Checkout</a>
+                    <!-- <input type="submit" value="Process to Checkout"> -->
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="searchPanel">
+        <h4><a href="index.html">GIVENCHY</a></h4>
+        <div>
+            <input type="button" value="CLOSE" class='closeBtn'>
+            <div>
+                <input type="text" name="userSearch" id="search" placeholder="Product Search">  
+            </div>
+            <ul>
+                <li>
+                    <img src="images/search-bag-img.png" alt="search bag">
+                    <a href="list_crossbody_mini_bags.html">Bags</a>
+                </li>
+                <li>
+                    <img src="images/search-dresses-img.png" alt="search dresses">
+                    <a href="list_dresses.html">Dresses</a>
+                </li>
+                <li>
+                    <img src="images/search-jackets-img.png" alt="search jackets">
+                    <a href="list_jackets_sweatshirts.html">Jackets</a>
+                </li>
+            </ul> 
+        </div>
+    </div> 
+
+    <header>
+        <h1>
+            <a href="index.html">
+                <img src="images/Logo.png" alt="logoimg">
+            </a>
+        </h1>
+        <nav>
+            <input type="button" value="mobileFNB" class="mui">
+
+            <ul class="mobileFNB">
+                <li>
+                    <a href="list_gift-for-her.html">Gift</a>
+                </li>
+                <li>
+                    <a href="list_women.html">Women</a>
+                </li>
+                <li>
+                    <a href="list_man.html">Man</a>
+                </li>
+                <li>
+                    <a href="list_shoulder_bags.html">Bags</a>
+                </li>
+            </ul>
+            <ul>
+                <li><input type="button" value="Search" data-panel="searchPanel" class="panelBtn"></li>
+                <li><input type="button" value="Login" data-panel="loginPanel" class="panelBtn"></li>
+                <li><input type="button" value="My Bag" data-panel="addtobagPanel" class="panelBtn"></li>
+            </ul>  
+        </nav>
+    </header>
+
+    <div class="legalContainer">
+
+        <div id="cookiePanel">
+            <input type="button" value="CLOSE" class="closeBtn">
+            <div class="cookie_wrapper">
+                <h5>GIVENCHY Privacy Preference Center</h5>
+                <input type="radio" name="slider" id="yourPrivacy" checked>
+                <input type="radio" name="slider" id="strictly">
+                <input type="radio" name="slider" id="functional">
+                <input type="radio" name="slider" id="performance">
+                <input type="radio" name="slider" id="targeting">
+                <input type="radio" name="slider" id="socialMedia">
+                <nav>
+                    <label for="yourPrivacy" class="yourPrivacy">Your Privacy</label>
+                    <label for="strictly" class="strictly">Strictly Necessary Cookies</label>
+                    <label for="functional" class="functional">Functional Cookies</label>
+                    <label for="performance" class="performance">Performance Cookies</label>
+                    <label for="targeting" class="targeting">Targeting Cookies</label>
+                    <label for="socialMedia" class="socialMedia">Social Media Cookies</label>
+                </nav>
+                <div>
+                    <input type="button" value="CONFIRM MY CHOICE">
+                </div>
+                <div class="cookieContWrap">
+                    <div class="content content_1">
+                        <div class="title">Your Privacy</div>
+                        <p>When you visit any website, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences or your device and is mostly used to make the site work as you expect it to. The information does not usually directly identify you, but it can give you a more personalized web experience. Because we respect your right to privacy, you can choose not to allow some types of cookies. Click on the different category headings to find out more and change our default settings. However, blocking some types of cookies may impact your experience of the site and the services we are able to offer.</p>
+                    </div>
+                    <div class="content content_2">
+                        <div class="title">Strictly Necessary Cookies</div>
+                        <p>These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work.</p>
+                    </div>
+                    <div class="content content_3">
+                        <div class="title">Performance Cookies</div>
+                        <p>These cookies enable the website to provide enhanced functionality and personalisation. They may be set by us or by third party providers whose services we have added to our pages. If you do not allow these cookies then some or all of these services may not function properly.</p>
+                    </div>
+                    <div class="content content_4">
+                        <div class="title">Functional Cookies</div>
+                        <p>These cookies enable the website to provide enhanced functionality and personalisation. They may be set by us or by third party providers whose services we have added to our pages. If you do not allow these cookies then some or all of these services may not function properly.</p>
+                    </div>
+                    <div class="content content_5">
+                        <div class="title">Targeting Cookies</div>
+                        <p>When you visit any website, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences or your device and is mostly used to make the site work as you expect it to. The information does not usually directly identify you, but it can give you a more personalized web experience. Because we respect your right to privacy, you can choose not to allow some types of cookies. Click on the different category headings to find out more and change our default settings. However, blocking some types of cookies may impact your experience of the site and the services we are able to offer.</p>
+                    </div>
+                    <div class="content content_6">
+                        <div class="title">Social Media Cookies</div>
+                        <p>When you visit any website, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences or your device and is mostly used to make the site work as you expect it to. The information does not usually directly identify you, but it can give you a more personalized web experience. Because we respect your right to privacy, you can choose not to allow some types of cookies. Click on the different category headings to find out more and change our default settings. However, blocking some types of cookies may impact your experience of the site and the services we are able to offer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="sidebar">
+            <ul>
+                <li><a href="ft_Privacy_Policy.html" >Privacy Policy</a></li>
+                <li><a href="ft_Cookie_Policy.html" class="active">Cookie Policy</a></li>
+                <li><a href="ft_General_terms_conditions.html">General terms & conditions of sale</a></li>
+                <li><a href="ft_Terms_Conditions.html">Terms & Conditions</a></li>
+                <li><a href="ft_Anti_Counterfeit.html">Anti-Counterfeit</a></li>
+                <li><a href=https://www.lvmh.com/group/about-lvmh/ethics-compliance target="_blank">Ethics & Compliance</a></li>
+            </ul>
+        </nav>
+        <div class="Cookie_Policy"> 
+                <h2>COOKIES POLICY</h2> 
+                <div class="box"> 
+                 <h2>Managing cookies</h2> 
+                 <p><span>This section is about Our policy on managing cookies on givenchy.com. It is intended to inform You of the source and use of the browsing information processed when You visit Our website, and Your rights. </span></p> 
+                </div> 
+                <div class="box"> 
+                 <h3>What is a cookie?</h3> 
+                 <p><span>When visiting Our website, We may – if You so choose – save a text file on Your terminal (computer, smartphone, tablet, etc.) through Your browser. For the entire period that it is valid or saved, this text file, or cookie, enables GIVENCHY to identify Your terminal on Your subsequent visits. Only the issuer of a cookie can read or modify the information in this file. Below is information about cookies that may be saved on Your terminal when You visit pages on the website givenchy.com, either by GIVENCHY or by third parties, as well as how to delete or block these cookies from saving on your terminal. </span> </p> 
+                </div> 
+                <div class="box"> 
+                 <h3>Why does givenchy.com use cookies?</h3> 
+                 <p><span>There are many different types of cookies. Some are issued by GIVENCHY or its service providers directly, and others may be issued by other companies.<br> <br> - Cookies issued by GIVENCHY and its service providers<br> When You browse Our website, a variety of cookies may be saved on Your terminal:<br> NECESSARY cookies (session cookies) that are needed to browse Our website, mainly to properly complete the ordering process. Deleting these cookies may make it difficult to browse Our website and impossible to place an order. These cookies may be installed on Your terminal by GIVENCHY or its service providers.<br> ANALYTIC AND PERSONALIZATION cookies (persistent cookies) that are not required for browsing, but might enable features like assisting Your searches and optimizing Your buying experience.<br> ADVERTISING cookies (third-party cookies) that are not required for browsing, but allow You to see ads more relevant to you.<br> If Your terminal is used by several people and it has several browser software programs installed, We cannot ensure that the services and advertising designed for Your terminal will pertain to Your own use rather than that of another user. If this is the case, sharing Your terminal and your browser's cookie configuration settings with other people becomes Your own choice and Your responsibility. </span> </p> 
+                 <p><span> - Cookies issued by other companies<br> Cookies that third parties issue and use on Our website are governed by the personal data protection policies of those third parties. These cookies are not required to browse Our website. We may include third-party digital applications on Our website that enable You to share Our website content with other people or allow Us to share Your session details or opinions about content on Our website with these other people. This applies to the "Share" and "Like" buttons which originate from social networks such as Facebook, Twitter, Instagram, Pinterest, etc.<br> The social network providing these buttons may identify You using this button, even if You have not used the button while visiting Our Website. We have no control over the process that social networks use to collect information about Your browsing on Our website and linked to the personal data they possess. We recommend reading the privacy policies for those social networks. </span> </p> 
+                </div> 
+                <div class="box"> 
+                 <h3>Managing cookies saved on your terminal</h3> 
+                 <p> <span> The decision to save a Cookie on a terminal is yours alone. You can personalize your browser settings to either accept and save cookies on Your terminal or to deny them. Each browser has different configuration settings. They are usually explained in your browser's help menu. We recommend that You familiarize yourself with them. It will help You know how to modify Your cookie preferences. </span></p> 
+                 <ul> 
+                  <li>Internet Explorer™: <a href="https://support.microsoft.com/en-us/help/17442/windows-internet-explorer-delete-manage-cookies">https://support.microsoft.com/en-us/help/17442/windows-internet-explorer-delete-manage-cookies</a></li> 
+                  <li>Safari: <a href="https://support.apple.com/kb/PH19214?locale=fr_FR&amp;viewlocale=en_US">https://support.apple.com/kb/PH19214?locale=fr_FR&amp;viewlocale=en_US</a></li> 
+                  <li>Chrome: <a href="https://support.google.com/chrome/answer/95647?hl=en&amp;hlrm=en">https://support.google.com/chrome/answer/95647?hl=en&amp;hlrm=en</a></li> 
+                  <li>Firefox: <a href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences">https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences</a></li> 
+                  <li>Opera™: <a href="http://help.opera.com/Windows/10.20/en/cookies.html">http://help.opera.com/Windows/10.20/en/cookies.html</a></li> 
+                 </ul> 
+                 <p>Please note: Any of the settings You change to accept or deny cookies on Your browser program may affect Your online browsing experience and the terms of Your access to certain services requiring the use of those cookies. For example, denying some necessary cookies may result in You not being able to place an order on Our website.</p> 
+                 <p>26/01/2022</p> 
+                 <p>COOKIE LIST<br> <br> A cookie is a small piece of data (text file) that a website – when visited by a user – asks your browser to store on your device in order to remember information about you, such as your language preference or login information. Those cookies are set by us and called first-party cookies. We also use third-party cookies – which are cookies from a domain different than the domain of the website you are visiting – for our advertising and marketing efforts. More specifically, we use cookies and other tracking technologies for the following purposes:</p> 
+                 <p>STRICTLY NECESSARY COOKIES<br> <br> These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information.</p> 
+                 <p>ANALYTICAL AND PERSONALISATION COOKIES<br> <br> These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site. All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance.</p> 
+                 <p>TARGETING COOKIES<br> <br> These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising.</p> 
+                 <p>SOCIAL MEDIA COOKIES<br> <br> These cookies are set by a range of social media services that we have added to the site to enable you to share our content with your friends and networks. They are capable of tracking your browser across other sites and building up a profile of your interests. This may impact the content and messages you see on other websites you visit. If you do not allow these cookies you may not be able to use or see these sharing tools.<br> &nbsp;</p> 
+                 <div class="box"> 
+                  <h3> COOKIE CENTER </h3>
+                  <input type="button" value="CLICK HERE" data-panel="cookiePanel" class="panelBtn">
+                 </div> 
+                </div> 
+        </div>
+    </div>
+  
+    <footer>
+        <div>
+            <a href="index.html" class="mainlogo">GIVENCHY</a>
+            <div class="footerWrapper">
+                <div class="leftContainer">
+                    <div>
+                        <h4>STORE LOCATOR</h4>
+                        <P>Enter a location to find the nearest GIVENCHY Stores</P>
+                        <form>
+                            <div>
+                                <input type="text" placeholder="Search by city or postcode">
+                                <button type="submit">Search</button> 
+                            </div>
+                        </form>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="ft_contect.html">CONTECT US</a></li>
+                            <li><a href="ft_Privacy_Policy.html">LEGEL</a></li>
+                            <li><a href="ft_about.html">ABOUT</a></li>
+                            <li><a href="ft_customer_survice.html">CUSTOMER SURVICE</a></li> 
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="https://www.instagram.com/givenchy/" target="_blank">INSTAGRAM</a></li>
+                            <li><a href="https://www.facebook.com/Givenchy" target="_blank">FACEBOOK</a></li>
+                            <li><a href="https://twitter.com/givenchy" target="_blank">TWITTER</a></li>
+                            <li><a href="https://www.youtube.com/user/givenchychannel" target="_blank">YOUTUBE</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="rightContainer">
+                    <h4>SUBSCRIBE TO NEWSLETTER</h4>
+                    <form>
+                        <div class="footerSearchInput">
+                            <input type="text" placeholder="Search by city or postcode">
+                            <button type="submit">Search</button> 
+                        </div>
+                    </form> 
+                    <select>
+                        <option>COUNTRY &amp; LANGUAGE</option>
+                        <option>South Korea</option>
+                        <option>English</option>
+                    </select>           
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

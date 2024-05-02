@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIVENCHY</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="js/givenchy.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    
+    <div id="createAccountPanel">
+        <input type="button" value="CLOSE" class='closeBtn'>
+            <fieldset>
+                <legend>CREAT ACCOUNT</legend>
+                <ul>
+                    <li>
+                        <label for="fName">FIRST NAME*</label>
+                        <input type="text" id="fName">
+                    </li>
+                    <li>
+                        <label for="lName">LAST NAME*</label>
+                        <input type="text" id="lName">
+                    </li>
+                    <li>
+                        <label for="createail">EMAIL*</label>
+                        <input type="email" id="createail">
+                    </li>
+                    <li>
+                        <label for="password">PASSWORD*</label>
+                        <input type="password" id="password">
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>CONSENT TO PERSONAL DATA PROCESSING</legend>
+                <div>
+                    <input type="checkbox" id="agreeCheckbox_1">
+                    <label for="agreeCheckbox_1"> 
+                        I agree to the collection and use of my personal data for marketing purposes
+                    </label>
+                </div>
+                <div>
+                    <input type="checkbox" id="agreeCheckbox_2">
+                    <label for="agreeCheckbox_2">
+                        I agree to the collection, disclosure or processing of my personal data for profiling purposes  
+                    </label>
+                </div>
+            </fieldset>
+            <input type="button" value="CREAT ACCOUNT" data-panel="createAccountPanel">
+    </div>
+
+    <div id="resetPanel"> 
+        <input type="button" value="CLOSE" class="closeBtn">
+            <fieldset>
+                <legend>RESET PASSWORD REQUEST</legend>
+                <P>Provide the e-mail address of your account to receive a password reset e-mail.</P>
+                <div>
+                    <label for="resetemail">EMAIL*</label>
+                    <input type="text" id="resetemail">
+                </div>
+                <span>All fields marked with an * are mandatory</span>
+                <input type="button" value="RESET PASSWORD" class="resetpassword">
+            
+            </fieldset>
+    
+    </div>
+
+    <div id="loginPanel">
+        <fieldset> 
+            <legend>LOGIN</legend>
+            <div class="loginSection">
+                <div>
+                    <label for="loginemail">EMAIL*</label>
+                    <input type="text" id="loginemail" placeholder="Email">
+                </div>
+                <div>
+                    <label for="loginpassword">PASSWORD*</label>
+                    <input type="text" id="loginpassword" placeholder="Password">
+                </div> 
+            </div>
+            <div class="buttonSection">
+                <div>
+                    <input type="button" value="Forget Password" data-panel="resetPanel" class="panelBtn"> 
+                </div>
+                <div>
+                    <label for="checkbox" class="remember">
+                        Remember me
+                    <input type="checkbox" name="checkbox" id="checkbox"> 
+                    </label>
+                </div>  
+                 <div>
+                    <input type="button" value="LOGIN" data-panel="">
+                </div>
+            </div>
+            <div class="createAccountArea">
+                <h4>CREATE ACCOUNT</h4>
+                <P>- Add your favorite items to your wishlist</P>
+                <P>- Save your contact informations for a faster checkout</P>
+                <P>- Check your order status</P>
+            </div>
+            <div class="btnSection">
+                <div>
+                    <input type="button" value="CREAT ACCOUNT" data-panel="createAccountPanel" class="panelBtn" >
+                </div>
+                    <input type="button" value="CLOSE" class='closeBtn'> 
+            </div>
+        </fieldset>
+    </div>
+
+    <div id="addtobagPanel">
+        <input type="button" value="CLOSE" class='closeBtn'>
+        <div>
+            <h2>SHOPPING CART</h2>
+            <form action="p_checkout.html">
+                <div class="cart">
+                    <div class="cart-products">
+                        <div class="product">
+                            <img src="images/wGift_Antigon-aToy_bag_in_Box_leather01.png" alt="Antigon-aToy_bag_in_Box_leather">
+                            <div class="product-info">
+                                <span>New</span>
+                                <p>Medium Voyou Chain bag in leather</p>
+                                <p>Color <span>Red</span></p>
+                                <div class="countComponent">
+                                    <input type="button" value="subtract">
+                                    <span>1</span>
+                                    <input type="button" value="add">
+                                    <p>$2800</p>
+                                </div>
+                                <div class="remove">
+                                    <input type="button" value="Remove" class="btn_remove">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-total">
+                    <div>
+                        <span>SUBTOTAL</span>
+                        <span>$2800</span>
+                    </div>
+                    <div>
+                        <span>TOTAL</span>
+                        <span>$2800</span>
+                    </div>
+                    <a href="p_checkout.html">Process to Checkout</a>
+                    <!-- <input type="submit" value="Process to Checkout"> -->
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="searchPanel">
+        <h4><a href="index.html">GIVENCHY</a></h4>
+        <div>
+            <input type="button" value="CLOSE" class='closeBtn'>
+            <div>
+                <input type="text" name="userSearch" id="search" placeholder="Product Search">  
+            </div>
+            <ul>
+                <li>
+                    <img src="images/search-bag-img.png" alt="search bag">
+                    <a href="list_crossbody_mini_bags.html">Bags</a>
+                </li>
+                <li>
+                    <img src="images/search-dresses-img.png" alt="search dresses">
+                    <a href="list_dresses.html">Dresses</a>
+                </li>
+                <li>
+                    <img src="images/search-jackets-img.png" alt="search jackets">
+                    <a href="list_jackets_sweatshirts.html">Jackets</a>
+                </li>
+            </ul> 
+        </div>
+    </div>  
+
+    <header>
+        <h1>
+            <a href="index.html">
+                <img src="images/Logo.png" alt="logoimg">
+            </a>
+        </h1>
+        <nav>
+            <input type="button" value="mobileFNB" class="mui">
+
+            <ul class="mobileFNB">
+                <li>
+                    <a href="list_gift-for-her.html">Gift</a>
+                </li>
+                <li>
+                    <a href="list_women.html">Women</a>
+                </li>
+                <li>
+                    <a href="list_man.html">Man</a>
+                </li>
+                <li>
+                    <a href="list_shoulder_bags.html">Bags</a>
+                </li>
+            </ul>
+            <ul>
+                <li><input type="button" value="Search" data-panel="searchPanel" class="panelBtn"></li>
+                <li><input type="button" value="Login" data-panel="loginPanel" class="panelBtn"></li>
+                <li><input type="button" value="My Bag" data-panel="addtobagPanel" class="panelBtn"></li>
+            </ul>  
+        </nav>
+    </header>
+
+    <div class="indexContainer">
+        <!-- <img src="images/main-page.png" alt="MainImg"> -->
+            <video class="main_vedio" autoplay muted loop>
+                <source src="./givenchy-holiday-23-16x9-1--data.mp4">
+            </video>
+        <div class="giftWrapper">
+            <div>
+                <img src="images/gift-For-Her.png" alt="gift for her img">
+                <div class="giftforH">
+                    <h2>GIFT FOR HER</h2>
+                    <a href="list_gift-for-her.html">SHOP NOW</a>
+                </div>
+            </div>
+            <div>
+                <img src="images/gift-For-Him.png" alt="gift for him img">
+                <div class="giftforH">
+                    <h2>GIFT FOR HIM</h2>
+                    <a href="list_gift-for-him.html">SHOP NOW</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="partyLooks">
+            <h2>PARTY LOOKS</h2>
+            <img src="images/party-Looks.png"  alt="party look img">
+            <div>
+                <a href="list_coats_jackets.html">SHOP WOMEN</a>
+                <a href="list_jackets_sweatshirts.html">SHOP MEN</a>
+            </div>  
+        </div>
+
+        <div class="shopWrapper">
+                <div>
+                    <img src="images/shop-Bags.png" alt="shop bags img">
+                    <div class="shopBaglink">
+                        <a href="list_crossbody_mini_bags.html">SHOP BAGS</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/shop-Shoes.png"  alt="shop shoes img">
+                    <div class="shopBaglink">
+                        <a href="list_women.html">SHOP NEW IN</a>
+                    </div>
+                </div>
+        </div>
+
+        <div class="disscoverWrapper">
+            <h2>GIVENCHY</h2>
+            <img src="images/disscover-img.png" alt="Collection img">
+             <p>Discover Givenchy's latest innovations, the ultimate fusion of style and audacity.</p>
+            <div>
+                <a href="ft_about.html">DISCOVER US</a>
+            </div>
+        </div>
+       
+    </div>
+
+    <footer>
+        <div>
+            <a href="index.html" class="mainlogo">GIVENCHY</a>
+            <div class="footerWrapper">
+                <div class="leftContainer">
+                    <div>
+                        <h4>STORE LOCATOR</h4>
+                        <P>Enter a location to find the nearest GIVENCHY Stores</P>
+                        <form>
+                            <div>
+                                <input type="text" placeholder="Search by city or postcode" value="">
+                                <button type="submit">Search</button> 
+                            </div>
+                        </form>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="ft_contect.html">CONTECT US</a></li>
+                            <li><a href="ft_Privacy_Policy.html">LEGEL</a></li>
+                            <li><a href="ft_about.html">ABOUT</a></li>
+                            <li><a href="ft_customer_survice.html">CUSTOMER SURVICE</a></li> 
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="https://www.instagram.com/givenchy/" target="_blank">INSTAGRAM</a></li>                                 
+                            <li><a href="https://www.facebook.com/Givenchy" target="_blank">FACEBOOK</a></li>
+                            <li><a href="https://twitter.com/givenchy" target="_blank">TWITTER</a></li>
+                            <li><a href="https://www.youtube.com/user/givenchychannel" target="_blank">YOUTUBE</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="rightContainer">
+                    <h4>SUBSCRIBE TO NEWSLETTER</h4>
+                    <form>
+                        <div class="footerSearchInput">
+                            <input placeholder="Search by city or postcode" value="">
+                            <button type="submit">Search</button> 
+                        </div>
+                    </form> 
+                    <select>
+                        <option>COUNTRY &amp; LANGUAGE</option>
+                        <option>South Korea</option>
+                        <option>English</option>
+                    </select>           
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

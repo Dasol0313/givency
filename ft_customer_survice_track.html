@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIVENCHY</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="js/givenchy.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    
+    <div id="createAccountPanel">
+        <input type="button" value="CLOSE" class='closeBtn'>
+        <fieldset>
+        <legend>CREAT ACCOUNT</legend>
+        <ul>
+            <li>
+                <label for="creatFName">FIRST NAME*</label>
+                <input type="text" id="creatFName">
+            </li>
+            <li>
+                <label for="creatlName">LAST NAME*</label>
+                <input type="text" id="creatlName">
+            </li>
+            <li>
+                <label for="createmail">EMAIL*</label>
+                <input type="email" id="createmail">
+            </li>
+            <li>
+                <label for="creatpassword">PASSWORD*</label>
+                <input type="password" id="creatpassword">
+            </li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>CONSENT TO PERSONAL DATA PROCESSING</legend>
+        <div>
+            <input type="checkbox" id="agreeCheckbox">
+            <label for="agreeCheckbox"> 
+                I agree to the collection and use of my personal data for marketing purposes
+            </label>
+        </div>
+            <input type="checkbox" id="agreetoCheckbox">
+            <label for="agreetoCheckbox">
+                I agree to the collection, disclosure or processing of my personal data for profiling purposes  
+            </label>
+    </fieldset>
+    <input type="button" value="CREAT ACCOUNT" data-panel="createAccountPanel" class="panelBtn">
+    </div>
+
+    <div id="resetPanel"> 
+        <input type="button" value="CLOSE" class="closeBtn">
+            <fieldset>
+                <legend>RESET PASSWORD REQUEST</legend>
+                <P>Provide the e-mail address of your account to receive a password reset e-mail.</P>
+                <div>
+                    <label for="email">EMAIL*</label>
+                    <input type="text" id="email">
+                </div>
+                <span>All fields marked with an * are mandatory</span>
+                <input type="button" value="RESET PASSWORD" class="resetpassword">
+            
+            </fieldset>
+    
+    </div>
+
+    <div id="loginPanel">
+        <fieldset> 
+            <legend>LOGIN</legend>
+            <div class="loginSection">
+                <div>
+                    <label for="loginemail">EMAIL*</label>
+                    <input type="text" id="loginemail" placeholder="Email">
+                </div>
+                <div>
+                    <label for="password">PASSWORD*</label>
+                    <input type="text" id="password" placeholder="Password">
+                </div> 
+            </div>
+            <div class="buttonSection">
+                <div>
+                    <input type="button" value="Forget Password" data-panel="resetPanel" class="panelBtn"> 
+                </div>
+                <div>
+                    <label for="checkbox" class="remember">
+                        Remember me
+                    <input type="checkbox" name="checkbox" id="checkbox"> 
+                    </label>
+                </div>  
+                 <div>
+                    <input type="button" value="LOGIN" data-panel="">
+                </div>
+            </div>
+            <div class="createAccountArea">
+                <h4>CREATE ACCOUNT</h4>
+                <P>- Add your favorite items to your wishlist</P>
+                <P>- Save your contact informations for a faster checkout</P>
+                <P>- Check your order status</P>
+            </div>
+            <div class="btnSection">
+                <div>
+                    <input type="button" value="CREAT ACCOUNT" data-panel="createAccountPanel" class="panelBtn" >
+                </div>
+                    <input type="button" value="CLOSE" class='closeBtn'> 
+            </div>
+        </fieldset>
+    </div>
+
+    <div id="addtobagPanel">
+        <input type="button" value="CLOSE" class='closeBtn'>
+        <div>
+            <h2>Shopping Cart</h2>
+            <form action="p_checkout.html">
+                <div class="cart">
+                    <div class="cart-products">
+                        <div class="product">
+                            <img src="images/wGift_Antigon-aToy_bag_in_Box_leather01.png" alt="Antigon-aToy_bag_in_Box_leather">
+                            <div class="product-info">
+                                <span>New</span>
+                                <p>Medium Voyou Chain bag in leather</p>
+                                <p>Color <span>Red</span></p>
+                                <div class="countComponent">
+                                    <input type="button" value="subtract">
+                                    <span>1</span>
+                                    <input type="button" value="add">
+                                    <p>$2800</p>
+                                </div>
+                                <div class="remove">
+                                    <input type="button" value="Remove" class="btn_remove">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-total">
+                    <div>
+                        <span>SUBTOTAL</span>
+                        <span>$2800</span>
+                    </div>
+                    <div>
+                        <span>TOTAL</span>
+                        <span>$2800</span>
+                    </div>
+                    <a href="p_checkout.html">Process to Checkout</a>
+                    <!-- <input type="submit" value="Process to Checkout"> -->
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="searchPanel">
+        <h4><a href="index.html">GIVENCHY</a></h4>
+        <div>
+            <input type="button" value="CLOSE" class='closeBtn'>
+            <div>
+                <input type="text" name="userSearch" id="search" placeholder="Product Search">  
+            </div>
+            <ul>
+                <li>
+                    <img src="images/search-bag-img.png" alt="search bag">
+                    <a href="list_crossbody_mini_bags.html">Bags</a>
+                </li>
+                <li>
+                    <img src="images/search-dresses-img.png" alt="search dresses">
+                    <a href="list_dresses.html">Dresses</a>
+                </li>
+                <li>
+                    <img src="images/search-jackets-img.png" alt="search jackets">
+                    <a href="list_jackets_sweatshirts.html">Jackets</a>
+                </li>
+            </ul> 
+        </div>
+    </div> 
+
+    <header>
+        <h1>
+            <a href="index.html">
+                <img src="images/Logo.png" alt="logoimg">
+            </a>
+        </h1>
+        <nav>
+            <input type="button" value="mobileFNB" class="mui">
+
+            <ul class="mobileFNB">
+                <li>
+                    <a href="list_gift-for-her.html">Gift</a>
+                </li>
+                <li>
+                    <a href="list_women.html">Women</a>
+                </li>
+                <li>
+                    <a href="list_man.html">Man</a>
+                </li>
+                <li>
+                    <a href="list_shoulder_bags.html">Bags</a>
+                </li>
+            </ul>
+            <ul>
+                <li><input type="button" value="Search" data-panel="searchPanel" class="panelBtn"></li>
+                <li><input type="button" value="Login" data-panel="loginPanel" class="panelBtn"></li>
+                <li><input type="button" value="My Bag" data-panel="addtobagPanel" class="panelBtn"></li>
+            </ul>  
+        </nav>
+    </header>
+
+    <div class="customer_container">
+        <nav class="customer_sidebar">
+            <ul>
+                <li><a href="ft_customer_survice.html" >FAQ</a></li>
+                <li><a href="ft_customer_survice_shipping.html">Shipping & Payments</a></li>
+                <li><a href="ft_customer_survice_return.html">Return & Refund</a></li>
+                <li><a href="ft_customer_survice_track.html" class="active">Track Order</a></li>
+            </ul>
+        </nav>
+
+        <div class="track_order"> 
+            <fieldset> 
+                <h2>LOGIN</h2>
+                <h5>If you are already a Givenchy Family member, please enter your login information.</h5>
+                <div class="logininfo">
+                    <div>
+                        <label for="tracklogin">EMAIL*</label>
+                        <input type="text" id="tracklogin" placeholder="Email">
+                    </div>
+                    <div>
+                        <label for="trackpassword">PASSWORD*</label>
+                        <input type="text" id="trackpassword" placeholder="Password">
+                        <h5>All fields marked with an * are mandatory</h5>
+                    </div> 
+                    <div>
+                        <input type="button" value="LOGIN">
+                    </div>
+                </div>
+                <div class="createAccount">
+                    <h2>NEW MEMBER</h2>
+                    <h5>Create your personal account with us to become a member of the Givenchy Family.</h5>
+                    <div>
+                        <input type="button" value="CREATE AN ACCOUNT">
+                    </div>    
+                </div>
+                
+                <div>
+                    <h2>ORDER STATUS</h2>
+                    <h5>You can verify the status of your order without having an account. Please provide your contact information.</h5>
+                    <div class="orderstatus">
+                        <div>
+                            <label for="orderstaus_1">ORDER NUMBER*</label>
+                            <input type="text" id="orderstaus_1" placeholder="ORDER NUMBER">
+                        </div>
+                        <div>
+                            <label for="orderstaus_2">E-MAIL USED FOR YOUR ORDER*</label>
+                            <input type="text" id="orderstaus_2" placeholder="E-MAIL">
+                        </div> 
+                        <div>
+                            <label for="orderstaus_3">zip code for your billing address*</label>
+                            <input type="text" id="orderstaus_3" placeholder="zip code">
+                        </div> 
+                        <div>
+                            <select>
+                                <option>Country / Region</option>
+                                <option>South Korea</option>
+                                <option>Japan</option>
+                                <option>US</option>
+                                <option>UK</option>
+                                <option>Italy</option>
+                                <option>France</option>
+                                <option>Canada</option>
+                            </select>
+                            <h5>All fields marked with an * are mandatory</h5>
+                        </div>
+                        
+                        <div>
+                            <input type="button" value="VERIFY THE ORDER STATUS">
+                        </div>    
+                    </div>
+                </div>
+            </fieldset>
+        </div>     
+    </div>
+  
+
+
+    <footer>
+        <div>
+            <a href="index.html" class="mainlogo">GIVENCHY</a>
+            <div class="footerWrapper">
+                <div class="leftContainer">
+                    <div>
+                        <h4>STORE LOCATOR</h4>
+                        <P>Enter a location to find the nearest GIVENCHY Stores</P>
+                        <form>
+                            <div>
+                                <input type="text" placeholder="Search by city or postcode">
+                                <button type="submit">Search</button> 
+                            </div>
+                        </form>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="ft_contect.html">CONTECT US</a></li>
+                            <li><a href="ft_Privacy_Policy.html">LEGEL</a></li>
+                            <li><a href="ft_about.html">ABOUT</a></li>
+                            <li><a href="ft_customer_survice.html">CUSTOMER SURVICE</a></li> 
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="https://www.instagram.com/givenchy/" target="_blank">INSTAGRAM</a></li>
+                            <li><a href="https://www.facebook.com/Givenchy" target="_blank">FACEBOOK</a></li>
+                            <li><a href="https://twitter.com/givenchy" target="_blank">TWITTER</a></li>
+                            <li><a href="https://www.youtube.com/user/givenchychannel" target="_blank">YOUTUBE</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="rightContainer">
+                    <h4>SUBSCRIBE TO NEWSLETTER</h4>
+                    <form>
+                        <div class="footerSearchInput">
+                            <input type="text" placeholder="Search by city or postcode">
+                            <button type="submit">Search</button> 
+                        </div>
+                    </form> 
+                    <select>
+                        <option>COUNTRY &amp; LANGUAGE</option>
+                        <option>South Korea</option>
+                        <option>English</option>
+                    </select>           
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

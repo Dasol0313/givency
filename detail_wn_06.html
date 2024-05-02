@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIVENCHY</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="js/givenchy.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    
+    <div id="createAccountPanel">
+        <input type="button" value="CLOSE" class='closeBtn'>
+        <fieldset>
+        <legend>CREAT ACCOUNT</legend>
+        <ul>
+            <li>
+                <label for="creatFName">FIRST NAME*</label>
+                <input type="text" id="creatFName">
+            </li>
+            <li>
+                <label for="creatlName">LAST NAME*</label>
+                <input type="text" id="creatlName">
+            </li>
+            <li>
+                <label for="createmail">EMAIL*</label>
+                <input type="email" id="createmail">
+            </li>
+            <li>
+                <label for="creatpassword">PASSWORD*</label>
+                <input type="password" id="creatpassword">
+            </li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>CONSENT TO PERSONAL DATA PROCESSING</legend>
+        <div>
+            <input type="checkbox" id="agreeCheckbox">
+            <label for="agreeCheckbox"> 
+                I agree to the collection and use of my personal data for marketing purposes
+            </label>
+        </div>
+            <input type="checkbox" id="agreetoCheckbox">
+            <label for="agreetoCheckbox">
+                I agree to the collection, disclosure or processing of my personal data for profiling purposes  
+            </label>
+    </fieldset>
+    <input type="button" value="CREAT ACCOUNT" data-panel="createAccountPanel" class="panelBtn">
+    </div>
+
+    <div id="resetPanel"> 
+        <input type="button" value="CLOSE" class="closeBtn">
+            <fieldset>
+                <legend>RESET PASSWORD REQUEST</legend>
+                <P>Provide the e-mail address of your account to receive a password reset e-mail.</P>
+                <div>
+                    <label for="email">EMAIL*</label>
+                    <input type="text" id="email">
+                </div>
+                <span>All fields marked with an * are mandatory</span>
+                <input type="button" value="RESET PASSWORD" class="resetpassword">
+            
+            </fieldset>
+    
+    </div>
+
+    <div id="loginPanel">
+        <fieldset> 
+            <legend>LOGIN</legend>
+            <div class="loginSection">
+                <div>
+                    <label for="loginemail">EMAIL*</label>
+                    <input type="text" id="loginemail" placeholder="Email">
+                </div>
+                <div>
+                    <label for="password">PASSWORD*</label>
+                    <input type="text" id="password" placeholder="Password">
+                </div> 
+            </div>
+            <div class="buttonSection">
+                <div>
+                    <input type="button" value="Forget Password" data-panel="resetPanel" class="panelBtn"> 
+                </div>
+                <div>
+                    <label for="checkbox" class="remember">
+                        Remember me
+                    <input type="checkbox" name="checkbox" id="checkbox"> 
+                    </label>
+                </div>  
+                 <div>
+                    <input type="button" value="LOGIN" data-panel="">
+                </div>
+            </div>
+            <div class="createAccountArea">
+                <h4>CREATE ACCOUNT</h4>
+                <P>- Add your favorite items to your wishlist</P>
+                <P>- Save your contact informations for a faster checkout</P>
+                <P>- Check your order status</P>
+            </div>
+            <div class="btnSection">
+                <div>
+                    <input type="button" value="CREAT ACCOUNT" data-panel="createAccountPanel" class="panelBtn" >
+                </div>
+                    <input type="button" value="CLOSE" class='closeBtn'> 
+            </div>
+        </fieldset>
+    </div>
+
+    <div id="addtobagPanel">
+        <input type="button" value="CLOSE" class='closeBtn'>
+        <div>
+            <h2>Shopping Cart</h2>
+            <form action="p_checkout.html">
+                <div class="cart">
+                    <div class="cart-products">
+                        <div class="product">
+                            <img src="images/wGift_Antigon-aToy_bag_in_Box_leather01.png" alt="Antigon-aToy_bag_in_Box_leather">
+                            <div class="product-info">
+                                <span>New</span>
+                                <p>Medium Voyou Chain bag in leather</p>
+                                <p>Color <span>Red</span></p>
+                                <div class="countComponent">
+                                    <input type="button" value="subtract">
+                                    <span>1</span>
+                                    <input type="button" value="add">
+                                    <p>$2800</p>
+                                </div>
+                                <div class="remove">
+                                    <input type="button" value="Remove" class="btn_remove">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-total">
+                    <div>
+                        <span>SUBTOTAL</span>
+                        <span>$2800</span>
+                    </div>
+                    <div>
+                        <span>TOTAL</span>
+                        <span>$2800</span>
+                    </div>
+                    <a href="p_checkout.html">Process to Checkout</a>
+                    <!-- <input type="submit" value="Process to Checkout"> -->
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="searchPanel">
+        <h4><a href="index.html">GIVENCHY</a></h4>
+        <div>
+            <input type="button" value="CLOSE" class='closeBtn'>
+            <div>
+                <input type="text" name="userSearch" id="search" placeholder="Product Search">  
+            </div>
+            <ul>
+                <li>
+                    <img src="images/search-bag-img.png" alt="search bag">
+                    <a href="list_crossbody_mini_bags.html">Bags</a>
+                </li>
+                <li>
+                    <img src="images/search-dresses-img.png" alt="search dresses">
+                    <a href="list_dresses.html">Dresses</a>
+                </li>
+                <li>
+                    <img src="images/search-jackets-img.png" alt="search jackets">
+                    <a href="list_jackets_sweatshirts.html">Jackets</a>
+                </li>
+            </ul> 
+        </div>
+    </div> 
+
+    <header>
+        <h1>
+            <a href="index.html">
+                <img src="images/Logo.png" alt="logoimg">
+            </a>
+        </h1>
+        <nav>
+            <input type="button" value="mobileFNB" class="mui">
+
+            <ul class="mobileFNB">
+                <li>
+                    <a href="list_gift-for-her.html">Gift</a>
+                </li>
+                <li>
+                    <a href="list_women.html">Women</a>
+                </li>
+                <li>
+                    <a href="list_man.html">Man</a>
+                </li>
+                <li>
+                    <a href="list_shoulder_bags.html">Bags</a>
+                </li>
+            </ul>
+            <ul>
+                <li><input type="button" value="Search" data-panel="searchPanel" class="panelBtn"></li>
+                <li><input type="button" value="Login" data-panel="loginPanel" class="panelBtn"></li>
+                <li><input type="button" value="My Bag" data-panel="addtobagPanel" class="panelBtn"></li>
+            </ul>  
+        </nav>
+    </header>
+
+    <div class="list_detail">
+
+        <div id="detailPanel">
+            <input type="button" value="CLOSE" class='closeBtn'>
+            <div class="detail_wrapper">
+                <div>
+                    <ul>
+                        <li>Mini handbag or crossbody bag in Box calfskin leather.</li>
+                        <li>Antigona line.</li>
+                        <li>Zipper closure with GIVENCHY 4G zipper pull.</li>
+                        <li>Pentagonal patch with silvery debossed GIVENCHY signature.</li>
+                        <li>Leather handles.</li>
+                        <li>Adjustable and removable strap in leather.</li>
+                        <li>Silvery-finish metal details.</li>
+                        <li>One main compartment with two flat pockets and one zippered pocket inside.</li>
+                        <li>Strap length: 19 in. Handle: 3 in.</li>
+                    </ul>
+                </div>
+    
+                <div>   
+                    <dl>
+                        <dt>Color</dt>
+                        <dd>Red</dd>
+                    </dl>
+                    <dl>
+                        <dt>Composition</dt>
+                        <dd>
+                            100% calfskin leather. Lining: 100% cotton. Metal pieces: 100% zamac.</dd>
+                    </dl>
+                    <dl>
+                        <dt>Dimensions</dt>
+                        <dd>
+                            10.24 in x 7.48 in x 5.12 in</dd>
+                    </dl>
+                    <dl>
+                        <dt>Strap length
+                        </dt>
+                        <dd>
+                            Min: 18.9 in
+                            </dd>
+                        </dl>
+                    <dl>
+                        <dt>Country of orgin</dt>
+                        <dd>Italy</dd>
+                    </dl>
+                    <dl>
+                        <dt>Product Code</dt>
+                        <dd>BB05114014-001</dd>
+                    </dl>
+                </div> 
+                <div>
+                    <P>Our team is available Monday to Friday from 9am to 6pm in English or Korean</P>
+                </div>
+            </div>
+        </div>
+        <div id="contectPanel">
+        <input type="button" value="CLOSE" class='closeBtn'>
+        <div class="contect_wrapper">
+            <div>
+                <span>CONTECT</span>
+                <p>Our team is available Monday to Friday from 9am to 6pm in English or Korean.</p>
+            </div>
+            <div>
+                <a>Call 1551-2201</a>
+                <a href="mailto:contect.us@givench.com">Email contect.us@givench.com</a>
+            </div>
+            <fieldset>
+                <legend>SEND MESSEGE</legend>
+                <span>All fields marked with an * are mandatory</span>
+                <ul>
+                    <li><label for="lastName">LAST NAME*</label>
+                        <input type="text" id="lastName">
+                    </li>
+                    <li> <label for="firstName">FIRST NAME*</label>
+                        <input type="text" id="firstName">
+                    </li>
+                    <li>
+                        <label for="messegeemail">EMAIL*</label>
+                        <input type="text" id="messegeemail">
+                    </li>
+                    <li>
+                        <label for="subject">SUBJECT</label>
+                        <input type="text" id="subject">
+                    </li>
+                    <li>
+                        <label for="messege">YOUR MESSEGE</label>
+                        <input type="text" id="messege">
+                    </li>
+                </ul>
+            </fieldset>
+
+            <ul class="checkBoxs">
+                <li><input type="checkbox" id="checkAll"><label for="checkAll">I agree to all check boxes below:</label></li>
+                <li><input type="checkbox" id="check1"><label for="check1">I agree for GIVENCHY Korea to collect and use my personal data (Mandatory) Read the terms and conditions *</label></li>
+                <li><input type="checkbox" id="check2"><label for="check2">I hereby confirm that I am at least fourteen (14) years of age and agree to join as a member. *</label></li>
+                <li><input type="checkbox" id="check3"><label for="check3">I confirm that I have read the Terms and Conditions Read the terms and conditions *</label></li>
+                <li><input type="checkbox" id="check4"><label for="check4">I wish to be contacted by GIVENCHY Korea (including by email) to receive communications, personalized or not, about its products, services and events and/or to participate in marketing surveys.</label></li>
+                <li><input type="checkbox" id="check5"><label for="check5">I agree for GIVENCHY Korea to transfer my personal data to overseas data processor (Optional) Read the terms and conditions.</label></li>
+            </ul>
+
+            <div class="sendMessege">
+                <input type="button" value="SEND MESSEGE">
+                <p>GIVENCHY processes the data collected above, in accordance with the GIVENCHY Privacy Policy, to answer your questions, manage and optimize our interactions, and satisfy statistical and research needs. You have the right to access, rectify, delete and oppose the processing of your personal data in accordance with current legislation, which you may exercise by writing to mydata@givenchy.com. For any other request, please contact Customer Services at contact.kr@givenchy.com.</p>
+            </div>
+        </div>
+        </div>
+        <div id="shippingPanel">
+            <input type="button" value="CLOSE" class='closeBtn'>
+            <div class="shipping_wrapper">
+                <div>
+                    <a href="">Shipping</a>
+                    <ul>
+                        <li>Express Delivery within 2 business days</li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="">Return</a>
+                    <ul>
+                        <li>Free returns online or in-store within 30 days</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Gift wrapping</p>
+                    <ul>
+                        <li>Gift wrapping offered free of charge</li>
+                        <li>Product label with price and receipt will be removed</li>
+                        <li>You may also include a personalized message at checkout</li>
+                    </ul>
+                </div>
+            
+                
+            </div>
+        </div>
+        <div id="selectsizePanel">
+            <input type="button" value="CLOSE" class='closeBtn'>
+            <fieldset>
+                <div>
+                    <h5>Select your size</h5>
+                    <p>Discover your size</p>
+                    <input type="button" value="Size guide" data-panel="sizeguidePanel" class="panelBtn">
+                </div>
+                <ul>
+                    <li>
+                        <label for="sizeS" class="size">S
+                        <input type="checkbox" value="S" name="size" id="sizeS">
+                        </label>
+                    </li>
+                    <li>
+                        <label for="sizeM" class="size">M
+                        <input type="checkbox" name="size" id="sizeM">
+                        </label>
+                    </li>
+                    <li>
+                        <label for="sizeL" class="size">L
+                        <input type="checkbox" name="size" id="sizeL">
+                        </label>
+                    </li>
+                    <li>
+                        <label for="size36" class="size">36
+                        <input type="checkbox" name="size" id="size36">
+                        </label>
+                    </li>
+                    <li>
+                        <label for="size38" class="size">38
+                        <input type="checkbox" name="size" id="size38">
+                        </label>
+                    </li>
+                    <li>
+                        <label for="size40" class="size">40
+                        <input type="checkbox" name="size" id="size40">
+                        </label>
+                    </li>
+                    <li>
+                        <label for="size42" class="size">42
+                        <input type="checkbox" name="size" id="size42">
+                        </label>
+                    </li>
+                    <li>
+                        <label for="size44" class="size">44
+                        <input type="checkbox" name="size" id="size44">
+                        </label>
+                    </li>
+                    <li>
+                        <label for="size46" class="size">46
+                        <input type="checkbox" name="size" id="size46">
+                        </label>
+                    </li>
+                    <li>
+                        <label for="size48" class="size">48
+                        <input type="checkbox" name="size" id="size48">
+                        </label>
+                    </li>
+                    <li>
+                        <label for="size50" class="size">50
+                        <input type="checkbox" name="size" id="size50">
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+        </div>
+        <div id="sizeguidePanel">
+            <input type="button" value="CLOSE" class='closeBtn'>
+            <table>
+                <caption>SIZE CONVERSION GUIDE</caption>
+                <thead>
+                    <tr>
+                        <th>SIZE</th>
+                        <th>WAIST</th>
+                        <th>HIP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>36</td>
+                        <td>62</td>
+                        <td>88</td>
+                    </tr>
+                    <tr>
+                        <td>38</td>
+                        <td>65</td>
+                        <td>91</td>
+                    </tr>
+                    <tr>
+                        <td>40</td>
+                        <td>68</td>
+                        <td>94</td>
+                    </tr>
+                    <tr>
+                        <td>42</td>
+                        <td>72</td>
+                        <td>98</td>
+                    </tr>
+                    <tr>
+                        <td>44</td>
+                        <td>76</td>
+                        <td>102</td>
+                    </tr>
+                    <tr>
+                        <td>46</td>
+                        <td>80</td>
+                        <td>106</td>
+                    </tr>
+                    <tr>
+                        <td>48</td>
+                        <td>84</td>
+                        <td>110</td>
+                    </tr>
+                    <tr>
+                        <td>50</td>
+                        <td>88</td>
+                        <td>114</td>
+                    </tr>
+                    <tr>
+                        <td>52</td>
+                        <td>94</td>
+                        <td>118</td>
+                    </tr>
+                    <tr>
+                        <td>54</td>
+                        <td>100</td>
+                        <td>124</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <p>Our team is available Monday to Friday from 9am to 6pm in English or Korean.</p>
+            <a href="mailto:contact.kr@givenchy.com">Email contact.kr@givenchy.com</a>
+            </div>
+        </div>
+
+        <div class="left-img">
+            <img src="images/wNew_Medium_Voyou_bag_in_aged_leather01.png" alt="Medium_Voyou_bag_in_aged_leather">
+            <img src="images/wNew_Medium_Voyou_bag_in_aged_leather01_hover.png" alt="Medium_Voyou_bag_in_aged_leather">
+            <img src="images/wNew_Medium_Voyou_bag_in_aged_leather03.png" alt="Medium_Voyou_bag_in_aged_leather">
+            <img src="images/wNew_Medium_Voyou_bag_in_aged_leather04.png" alt="Medium_Voyou_bag_in_aged_leather">
+            <img src="images/wNew_Medium_Voyou_bag_in_aged_leather05.png" alt="Medium_Voyou_bag_in_aged_leather">
+            <img src="images/wNew_Medium_Voyou_bag_in_aged_leather06.png" alt="Medium_Voyou_bag_in_aged_leather">
+        </div>
+
+        <div class="list_info">
+           <div>
+                <div>
+                    <span>New</span>
+                    <h2>Medium Voyou bag in aged leather</h2>
+                    <h1>$3200</h1>
+                    <p>Color<span>Brown</span></p>
+                </div>
+                <div>
+                    <input type="button" value="ADD TO BAG" data-panel="addtobagPanel"  class="panelBtn" >
+                </div>
+                <div>
+                    <input type="button" value="MORE DETAIL" data-panel="detailPanel" class="panelBtn">
+                    <input type="button" value="CONTECT US" data-panel="contectPanel" class="panelBtn">
+                    <input type="button" value="FREE SHIPPING & RETURN" data-panel="shippingPanel" class="panelBtn">
+                </div>
+                <div>
+                    <ul>
+                        <li>Mini handbag or crossbody bag in Box calfskin leather.</li>
+                        <li>Antigona line.</li>
+                        <li>Zipper closure with GIVENCHY 4G zipper pull.</li>
+                        <li>Pentagonal patch with silvery debossed GIVENCHY signature.</li>
+                        <li>Leather handles.</li>
+                        <li>Adjustable and removable strap in leather.</li>
+                        <li>Silvery-finish metal details.</li>
+                    </ul>
+                    <input type="button" value="All DETAIL" data-panel="detailPanel" class="panelBtn">
+                </div>
+            </div>
+        </div>  
+
+    </div>
+
+    <div class="recommend_products">
+        <ul>
+            <li>
+                <a href="detail_wn_02.html">
+                    <img src="images/wNew_Dress_in_lurex_with_floral_jacquard01.png" alt="Dress_in_lurex_with_floral_jacquard">
+                </a>
+                <div>
+                    <dl>
+                        <dt>Shark Lock bucket bag in Box leather</dt>
+                        <dd>$2800</dd>
+                    </dl>
+                    <input type="button" value="wish" class="toggleWish active">
+                </div>       
+            </li>
+            <li>
+                <a href="detail_wn_08.html">
+                    <img src="images/wNew_Mini_Antigona_Stretch_bag_in_corset_style_leather01.png"  alt="Mini_Antigona_Stretch_bag_in_corset_style_leather">
+                </a>
+                <div>
+                    <dl>
+                        <dt>Mini Antigona Lock bag in washed denim</dt>
+                        <dd>$2900</dd>
+                    </dl>
+                    <input type="button" value="wish" class="toggleWish active">
+                </div>       
+            </li>
+            <li>
+                <a href="detail_wn_07.html">
+                    <img src="images/wNew_Mini_Antigona_Lock_bag_in_washed_denim01.png" alt="Mini_Antigona_Lock_bag_in_washed_denim">
+                </a>
+                <div>
+                    <dl>
+                        <dt>Mini Antigona Lock bag in denim with pearls</dt>
+                        <dd>$2880</dd>
+                    </dl>
+                    <input type="button" value="wish" class="toggleWish active">
+                </div>       
+            </li>
+            <li>
+                <a href="detail_wn_11.html">
+                    <img src="images/wNew_Skirt_in_satin_and_lace_Color_Blush_Pink01.png" alt="Skirt_in_satin_and_lace_Color_Blush_Pink">
+                </a>
+                <div>
+                    <dl>
+                        <dt>Mini Antigona Lock bag in boxleather</dt>
+                        <dd>$3200</dd>
+                    </dl>
+                    <input type="button" value="wish" class="toggleWish active">
+                </div>       
+            </li>
+        </ul>
+        </div>
+    <footer>
+        <div>
+            <a href="index.html" class="mainlogo">GIVENCHY</a>
+            <div class="footerWrapper">
+                <div class="leftContainer">
+                    <div>
+                        <h4>STORE LOCATOR</h4>
+                        <P>Enter a location to find the nearest GIVENCHY Stores</P>
+                        <form>
+                            <div>
+                                <input type="text" placeholder="Search by city or postcode">
+                                <button type="submit">Search</button> 
+                            </div>
+                        </form>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="ft_contect.html">CONTECT US</a></li>
+                            <li><a href="ft_Privacy_Policy.html">LEGEL</a></li>
+                            <li><a href="ft_about.html">ABOUT</a></li>
+                            <li><a href="ft_customer_survice.html">CUSTOMER SURVICE</a></li> 
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="https://www.instagram.com/givenchy/" target="_blank">INSTAGRAM</a></li>
+                            <li><a href="https://www.facebook.com/Givenchy" target="_blank">FACEBOOK</a></li>
+                            <li><a href="https://twitter.com/givenchy" target="_blank">TWITTER</a></li>
+                            <li><a href="https://www.youtube.com/user/givenchychannel" target="_blank">YOUTUBE</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="rightContainer">
+                    <h4>SUBSCRIBE TO NEWSLETTER</h4>
+                    <form>
+                        <div class="footerSearchInput">
+                            <input type="text" placeholder="Search by city or postcode">
+                            <button type="submit">Search</button> 
+                        </div>
+                    </form> 
+                    <select>
+                        <option>COUNTRY &amp; LANGUAGE</option>
+                        <option>South Korea</option>
+                        <option>English</option>
+                    </select>           
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

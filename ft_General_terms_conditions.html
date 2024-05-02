@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIVENCHY</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="js/givenchy.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    
+    <div id="createAccountPanel">
+        <input type="button" value="CLOSE" class='closeBtn'>
+        <fieldset>
+        <legend>CREAT ACCOUNT</legend>
+        <ul>
+            <li>
+                <label for="creatFName">FIRST NAME*</label>
+                <input type="text" id="creatFName">
+            </li>
+            <li>
+                <label for="creatlName">LAST NAME*</label>
+                <input type="text" id="creatlName">
+            </li>
+            <li>
+                <label for="createmail">EMAIL*</label>
+                <input type="email" id="createmail">
+            </li>
+            <li>
+                <label for="creatpassword">PASSWORD*</label>
+                <input type="password" id="creatpassword">
+            </li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>CONSENT TO PERSONAL DATA PROCESSING</legend>
+        <div>
+            <input type="checkbox" id="agreeCheckbox">
+            <label for="agreeCheckbox"> 
+                I agree to the collection and use of my personal data for marketing purposes
+            </label>
+        </div>
+            <input type="checkbox" id="agreetoCheckbox">
+            <label for="agreetoCheckbox">
+                I agree to the collection, disclosure or processing of my personal data for profiling purposes  
+            </label>
+    </fieldset>
+    <input type="button" value="CREAT ACCOUNT" data-panel="createAccountPanel" class="panelBtn">
+    </div>
+
+    <div id="resetPanel"> 
+        <input type="button" value="CLOSE" class="closeBtn">
+            <fieldset>
+                <legend>RESET PASSWORD REQUEST</legend>
+                <P>Provide the e-mail address of your account to receive a password reset e-mail.</P>
+                <div>
+                    <label for="email">EMAIL*</label>
+                    <input type="text" id="email">
+                </div>
+                <span>All fields marked with an * are mandatory</span>
+                <input type="button" value="RESET PASSWORD" class="resetpassword">
+            
+            </fieldset>
+    
+    </div>
+
+    <div id="loginPanel">
+        <fieldset> 
+            <legend>LOGIN</legend>
+            <div class="loginSection">
+                <div>
+                    <label for="loginemail">EMAIL*</label>
+                    <input type="text" id="loginemail" placeholder="Email">
+                </div>
+                <div>
+                    <label for="password">PASSWORD*</label>
+                    <input type="text" id="password" placeholder="Password">
+                </div> 
+            </div>
+            <div class="buttonSection">
+                <div>
+                    <input type="button" value="Forget Password" data-panel="resetPanel" class="panelBtn"> 
+                </div>
+                <div>
+                    <label for="checkbox" class="remember">
+                        Remember me
+                    <input type="checkbox" name="checkbox" id="checkbox"> 
+                    </label>
+                </div>  
+                 <div>
+                    <input type="button" value="LOGIN" data-panel="">
+                </div>
+            </div>
+            <div class="createAccountArea">
+                <h4>CREATE ACCOUNT</h4>
+                <P>- Add your favorite items to your wishlist</P>
+                <P>- Save your contact informations for a faster checkout</P>
+                <P>- Check your order status</P>
+            </div>
+            <div class="btnSection">
+                <div>
+                    <input type="button" value="CREAT ACCOUNT" data-panel="createAccountPanel" class="panelBtn" >
+                </div>
+                    <input type="button" value="CLOSE" class='closeBtn'> 
+            </div>
+        </fieldset>
+    </div>
+
+    <div id="addtobagPanel">
+        <input type="button" value="CLOSE" class='closeBtn'>
+        <div>
+            <h2>Shopping Cart</h2>
+            <form action="p_checkout.html">
+                <div class="cart">
+                    <div class="cart-products">
+                        <div class="product">
+                            <img src="images/wGift_Antigon-aToy_bag_in_Box_leather01.png" alt="Antigon-aToy_bag_in_Box_leather">
+                            <div class="product-info">
+                                <span>New</span>
+                                <p>Medium Voyou Chain bag in leather</p>
+                                <p>Color <span>Red</span></p>
+                                <div class="countComponent">
+                                    <input type="button" value="subtract">
+                                    <span>1</span>
+                                    <input type="button" value="add">
+                                    <p>$2800</p>
+                                </div>
+                                <div class="remove">
+                                    <input type="button" value="Remove" class="btn_remove">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-total">
+                    <div>
+                        <span>SUBTOTAL</span>
+                        <span>$2800</span>
+                    </div>
+                    <div>
+                        <span>TOTAL</span>
+                        <span>$2800</span>
+                    </div>
+                    <a href="p_checkout.html">Process to Checkout</a>
+                    <!-- <input type="submit" value="Process to Checkout"> -->
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="searchPanel">
+        <h4><a href="index.html">GIVENCHY</a></h4>
+        <div>
+            <input type="button" value="CLOSE" class='closeBtn'>
+            <div>
+                <input type="text" name="userSearch" id="search" placeholder="Product Search">  
+            </div>
+            <ul>
+                <li>
+                    <img src="images/search-bag-img.png" alt="search bag">
+                    <a href="list_crossbody_mini_bags.html">Bags</a>
+                </li>
+                <li>
+                    <img src="images/search-dresses-img.png" alt="search dresses">
+                    <a href="list_dresses.html">Dresses</a>
+                </li>
+                <li>
+                    <img src="images/search-jackets-img.png" alt="search jackets">
+                    <a href="list_jackets_sweatshirts.html">Jackets</a>
+                </li>
+            </ul> 
+        </div>
+    </div> 
+
+    <header>
+        <h1>
+            <a href="index.html">
+                <img src="images/Logo.png" alt="logoimg">
+            </a>
+        </h1>
+        <nav>
+            <input type="button" value="mobileFNB" class="mui">
+
+            <ul class="mobileFNB">
+                <li>
+                    <a href="list_gift-for-her.html">Gift</a>
+                </li>
+                <li>
+                    <a href="list_women.html">Women</a>
+                </li>
+                <li>
+                    <a href="list_man.html">Man</a>
+                </li>
+                <li>
+                    <a href="list_shoulder_bags.html">Bags</a>
+                </li>
+            </ul>
+            <ul>
+                <li><input type="button" value="Search" data-panel="searchPanel" class="panelBtn"></li>
+                <li><input type="button" value="Login" data-panel="loginPanel" class="panelBtn"></li>
+                <li><input type="button" value="My Bag" data-panel="addtobagPanel" class="panelBtn"></li>
+            </ul>  
+        </nav>
+    </header>
+
+    <div class="legalContainer">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="ft_Privacy_Policy.html" >Privacy Policy</a></li>
+                <li><a href="ft_Cookie_Policy.html">Cookie Policy</a></li>
+                <li><a href="ft_General_terms_conditions.html" class="active">General terms & conditions of sale</a></li>
+                <li><a href="ft_Terms_Conditions.html">Terms & Conditions</a></li>
+                <li><a href="ft_Anti_Counterfeit.html">Anti-Counterfeit</a></li>
+                <li><a href=https://www.lvmh.com/group/about-lvmh/ethics-compliance target="_blank">Ethics & Compliance</a></li>
+            </ul>
+        </nav>
+            <div class="General_terms_conditions"> 
+                <div class="wrapper"> 
+                 <h2>TERMS OF SALE</h2> 
+                 <div class="box"> 
+                  <p>Givenchy.com – <u>version dated December 2023</u></p> 
+                  <p>Please carefully read these Terms of Sale, General Terms and Conditions of Use, the Privacy and Personal Data Protection Policy, Givenchy Korea’s Privacy Policy, and the Cookies Policy accessible on the givenchy.com website or the Checkout Page. customer can also print the full text of these Terms of Sale through the print function of customer’s browser.</p> 
+                  <p>Use of the remote sales process described in these Terms of Sale is restricted to “consumers” only, (i) as defined by law, and (ii) individuals acting exclusively on their own behalf.</p> 
+                 </div> 
+                 <div class="box"> 
+                  <h3>1. Identification of the seller</h3> 
+                  <p>These Terms of Sale are those of GIVENCHY Korea Ltd., whose registered office is at (Da-dong) 15Fl, 24 Cheonggyecheon-ro, Jung-gu, Seoul.</p> 
+                  <p>Please note that GIVENCHY may partner with Givenchy Korea France SAS, a company incorporated under the laws of France, whose registered office is at 320 rue Saint-Honoré, 75001 Paris, France, registered under number 818 358 459 RCS Paris, which facilitates the sale to customer and thus enables customer to make an order in customer’s destination, where GIVENCHY does not normally provide order processing and fulfilment services. In such case, the relevant terms regarding Givenchy Korea France SAS apply to the transaction with customers.</p> 
+                 </div> 
+                 <div class="box"> 
+                  <h3>2. Scope and acceptance of the Terms of Sale</h3> 
+                  <p>These Terms of Sale apply to all sales of GIVENCHY products to customers concluded remotely via the cross-border merchant site accessible in English at https://givenchy.com/int (hereinafter the “Website”) by visiting the Checkout (or similar) facility, operated by Givenchy Korea and residing on the Website (“Checkout”), placing an order through the Website and the Checkout, the customer confirm that he/she have read, understood and agreed to the Terms of Sale ( “Terms”), and the GIVENCHY’s Privacy Policy and its Addendum for Korean Residents.</p> 
+                  <p>Givenchy Korea may also process customer personal information as further detailed in their Privacy Policy which is accessible at: <a href="https://www.givenchy.com/int/en/privacy-policy.html">https://givenchy.com/int/en/privacy-policy.html</a> (“Givenchy Korea Privacy Policy”)</p> 
+                  <p>The customer agreed to be bound by the Terms, GIVENCHY’s Privacy Policy, Addendum for Korean Residents, and Givenchy Korea Privacy Policy. If the customer does not agree to these Terms, GIVENCHY’s Privacy Policy, Addendum for Korean Residents and Givenchy Korea Privacy Policy, it’s recommended not to order any product or service through the Website and the Checkout. These terms define customer legal relationship with Givenchy and Givenchy Korea regarding the Checkout and the placement of orders for purchase of Products (as defined below).</p> 
+                  <p>GIVENCHY reserves the right to make any changes to these Terms, and shall notify or inform such changes to the extent required under the law. However, orders will be governed by the Terms in force at the time when said orders were placed by the customer. In the event that, subsequent to the date of their removal from the Website, an outdated version of the Terms remains available to the public via other websites or by any other means other than on the Website, these Terms and Conditions would no longer, however, be binding on GIVENCHY for the orders placed after said removal.</p> 
+                 </div> 
+                 <div class="box"> 
+                  <h3>3. Product information and availability </h3> 
+                  <p>Information relating to all GIVENCHY branded products (hereinafter the “<b>Products</b>”) that may be sold is available on the Website. This information complies with the requirements of the legal and regulatory texts in force.</p> 
+                  <p>Information relating to all GIVENCHY branded products (hereinafter the “Products”) that may be sold is available on the Website. This information complies with the requirements of the legal and regulatory texts in force.</p> 
+                  <p>Product visuals appearing on the Website (Products and/or Packaging) are for illustrative purposes only and may be altered according to the quality of the equipment used by the customer to access the Website or the visuals. In this case, GIVENCHY and Givenchy Korea may not be held responsible. It is stipulated that the customer may always exercise his/her right of withdrawal in accordance with these Terms of Sale.</p> 
+                  <p>Our Product offerings and prices are valid as long as they are visible on the Website and Checkout, within the limit and subject to available stock. Errors or modifications may exist in exceptional cases, particularly in the case of simultaneous orders of the same Product by several customers.</p> 
+                  <p>GIVENCHY reserves the right, at any time and without prior notice, to change the Products and Prices offered on the Website. To ensure better quality of service and availability of our Products to all customers, GIVENCHY reserves the right to limit the quantity of Products a customer can purchase, in accordance with the applicable provisions in particular those of Act on the Consumer Protection in Electronic Commerce (hereinafter the “E-Commerce Act”).</p> 
+                 </div> 
+                 <div class="box"> 
+                  <h3>4. Ordering process </h3> 
+                 </div> 
+                 <div class="box"> 
+                  <h4><u>4.1. Selection of Products</u></h4> 
+                  <p>At any time, the customer may add Products to his/her selection by clicking “Add to cart,” and choose to complete his/her purchases or continue browsing.</p> 
+                  <p>The customer may view his/her selection by hovering over or clicking “your cart” in the top right menu, where the following will appear: the photo(s) of the Product(s), the color(s) and reference(s), the quantity selected, the unit price(s) and the subtotal of the selection. The customer may freely modify his/her online “Cart” containing the selected Products, remove an initially selected Product, modify the quantities ordered or add a Product by clicking the corresponding items made available within the “Cart.”</p> 
+                 </div> 
+                 <div class="box"> 
+                  <h4><u>4.2. Identification</u></h4> 
+                  <p>After selecting the Product(s), click “Check Out” to begin the ordering process.</p> 
+                  <p><u>Ordering through a customer account</u></p> 
+                  <p>If the customer already has a customer account, at this point they must identify themselves by entering his/her password.</p> 
+                  <p>If the customer does not yet have an account, he/she will be invited to create one by entering his/her e-mail address and creating a password. For the Website's mobile version, customer will be asked to enter this information during the identification process.</p> 
+                  <p>Usernames and passwords are strictly personal; therefore, the customer agrees to keep them safe and to never communicate them to third parties. GIVENCHY and Givenchy Korea shall, in no event, be held liable for any loss, theft or fraudulent use of the customer's account, in which case the latter agrees to inform GIVENCHY immediately.</p> 
+                  <p>Creating an account allows the customer to:</p> 
+                  <ul> 
+                   <li>track deliveries and review order history;</li> 
+                   <li>return or exchange Products;</li> 
+                   <li>add or change his/her delivery or billing address for future orders;</li> 
+                   <li>manage his/her subscriptions to the GIVENCHY newsletter.</li> 
+                  </ul> 
+                  <p>If the customer has a customer account, he/she may have his/her account deactivated at any time by sending an e-mail to Customer Service by clicking the “Customer Service” link. After deactivating his/her account, the customer is free to create a new account at any time.</p> 
+                  <p><u>Ordering as a guest without a customer account</u></p> 
+                  <p>The customer may also log in as a guest, without creating an account. Only a title, first name, last name and e-mail address, as well as the information necessary for the delivery of the order, are necessary to process the order. No customer account will be created, and all customer details will need to be re-entered for future orders.</p> 
+                  <p>The data recorded by the Website and Checkout Page constitutes proof of all transactions between GIVENCHY or Givenchy Korea on its behalf and the customers. In the event of conflict with a customer over a transaction carried out on the Website, the data recorded by GIVENCHY or Givenchy Korea is considered as valid proof of the content of the transaction.</p> 
+                 </div> 
+                 <div class="box"> 
+                  <h4><u>4.3. Confirmation of the order</u></h4> 
+                  <p>The customer may, for a gift order, include an accompanying card.</p> 
+                  <p>The Customer place the order for selected Product by using the Checkout ordering process. This involves selecting the Product, placing it in the shopping cart and transmitting the order by clicking on the “PAY AND PLACE ORDER”.</p> 
+                  <p>The customer may use his/her shipping address as the billing address or enter a different address. The customer will then be asked to select a payment method and to enter the related information and must then verify the accuracy of his/her selection before confirming the order.</p> 
+                  <p>Pursuant to the provisions of article 1127-1 of the French Civil Code, the customer, before finalizing his/her order, must have the option of verifying the details of such order, its total price and to correct any errors before confirming the order to express his/her acceptance of it.</p> 
+                  <p>At the end of the ordering process described above and after accepting the Terms of Sale, General Terms and Conditions of Use, the Privacy and Personal Data Protection Policy, and the Cookies Policy in their entirety, the customer must click the “Confirm your purchase” button. Any order entails an obligation to pay.</p> 
+                  <p>Once payment has been confirmed and duly completed, the customer will receive an email acknowledging that the order has been duly received. This order acknowledgement does not mean that his/her order has been accepted. the acceptance of customer order will be confirmed by sending to the customer an e-mail that confirms that the Products have been dispatched (“Order Confirmation”). If GIVENCHY and/or Global-e suspect someone’s identity, address, email address and/or payment information is being used fraudulently or in an unauthorized manned, additional verification or information may be required before accepting any order. The Contract with customer for the purchase of Products will only be formed when the Order Confirmation is duly sent to customer.</p> 
+                  <p>Appropriate efforts to process and fulfil any order as quickly as possible. However, the order may be declined, upon notice to customer if: (a) the Product is unavailable (in which case, if the payment was processed, Global-e will refund to customer in accordance with this terms; (b) Global-e is unable to verify the payment information provided by the customer, (c) the order from a customer with whom it is in dispute over a previous order, or (d) if GIVENCHY reasonably believes that the customer has breached these Terms of Sale or has engaged in a fraudulent activity, or for any other legitimate reason.</p> 
+                  <p>Additionally your Order may also be declined if it is suspected to be placed with a malicious intent, fraudulently, or if it is an order which has not been placed by individuals. Neither GIVENCHY nor Global-e are required to provide a reason for declining to accept any order, though it may be provided. Moreover, an order may be cancelled (in full or in part) even after the Order Confirmation was dispatched, if GIVENCHY or Global-e acting on its behalf suspect there could be, or actually were such circumstances (on our part or any third party’s part) giving rise to a good faith, genuine or honest error, mistake or misunderstanding pursuant to which Global-e acting on behalf of GIVENCHY would neither have sent the Order Confirmation nor agreed to sell the Products. An example could be a specious low price for a product otherwise costing significantly more. In the event of such genuine error, customer shall receive a properly detailed notice of cancellation, following which customer’s order will be automatically cancelled, and customer will be refunded the amounts customer actually paid.</p> 
+                  <p>The customer is advised to keep the acknowledgment of receipt and e-mail confirmation of the order on paper or electronically.</p> 
+                  <p>Pursuant to the E-Commerce Law GIVENCHY retains an electronic written record of the contract concluded between GIVENCHY, Givenchy Korea and a customer for a period between the conclusion of the contract and the date of delivery of the goods, and for a period of five (5) years from the date of delivery. The Customer has access to this document at any time, upon a request made to Customer Service by telephone at +33.1.44.31.19.52 (cost of a local call for Metropolitan France and cost of a standard international call to Metropolitan France for other countries) from Monday through Saturday from 10 a.m. to 7 p.m except holidays.</p> 
+                 </div> 
+                 <div class="box"> 
+                  <h3>5. Prices – Tax – Delivery Cost – Import Charges and Accepted payment methods.</h3> 
+                 </div> 
+                 <div class="box"> 
+                  <h4><u>5.1 Prices</u></h4> 
+                  <p>The prices of Products are stated in Local Currency where the order is placed and include any applicable sales taxes, plus any eventual international delivery costs and fees (“<b>Delivery Costs</b>”) and, if applicable and available for pre-payment, any eventual import duties, tariffs and similar fees that may be imposed by the delivery destination (“<b>Import Charges</b>”). Without advanced notice and from time to time, Delivery Costs and/or Import Charges could be covered, partially or fully. The Website will provide details about such offers before completing and placing the order.</p> 
+                 </div> 
+                 <div class="box"> 
+                  <h4><u>5.2. Import Charges</u></h4> 
+                  <p>For certain delivery destinations and/or Products, the customer may be offered the option to pre-pay applicable Import Charges, which will then be calculated and added or included in the final price when he/she place the order. In certain cases, the price of the Product may already be inclusive of Import Charges.</p> 
+                  <p>In the event that the option to pre-pay applicable Import Charges is available and the customer choose to pre-pay such Import Charges, or if the Import Charges were already included in the price of the Product, his/her final price will be fully guaranteed, and the actual Import Charges will be paid on his/her behalf to the applicable authorities, as determined by his/her delivery destination upon import of his/her order.</p> 
+                  <p> Our partner Global-e may contract with a local licensed customs broker in the destination. Agreement to these Terms serve as an authorization for the applicable customs broker to act as your agent to: (i) conduct transactions with the local applicable authority, (ii) complete, submit and execute related documents on your behalf in connection with the import of Products in your order, (iii) facilitate the payment of applicable Import Charges; and (iv) if applicable, return such Product to GIVENCHY (subject to these Terms). However, you acknowledge that, in the case of a return of Product, you (and not GIVENCHY, Global-e or anyone on their behalf) will be fully responsible for claiming back such Import Charges from the applicable tax authority, to the extent possible, and neither Global-e, nor GIVENCHY shall have responsibility or liability in connection with such claim.</p> 
+                  <p>The customer may decide not pre-pay the Import Charges at Checkout, or the option to pre-pay Import Charges may not be available for its delivery destination or the Product. In such cases (i.e. where pre-pay does not apply): (i) the customer is advised that the amount of Import Chares displayed under the pre-pay option on the checkout may not reflect the actual Import Charges payable by him/her as determined by his/her delivery destination’s relevant authority, which may be more or less than such estimate: and (ii) the customer will be fully responsible for paying all applicable Import Charges directly to the relevant authority (and for reclaiming them in the event of a cancellation or a return of Products, to the extent permitted in these Terms) as determined by the authorities of the delivery destination, and neither Global-e nor GIVENCHY shall have any responsibility or liability in connection with the foregoing. Moreover, if customer fail to pay Import Charges without reasonable reason causing the liability to fall on GIVENCHY, Global-e or the carrier, the liability amount of Import Charges may be deducted from any refund or other amounts customer may claim, to the extent permitted under applicable law.</p> 
+                  <p>If customer elected not to pre-pay Import Charges, or failed to pay Import Charges, or refused to accept Products otherwise than in accordance with the return or cancellation procedure under these Terms, in each case resulting with the Products being returned or needing to be returned, then customer may be liable for the return delivery costs and may not be reimbursed or refunded for Delivery Costs paid by him/her for making the delivery to him/her. GIVENCHY or Global-e on its behalf may also charge customer with additional direct or indirect charges resulting from said failure or refusal, to the extent permitted under applicable law. GIVENCHY or Global-e on its behalf may, if that is in accordance with these Terms, reimburse and refund customer for the cost of the Products, but not the Import Charges which may or not be reimbursable by the relevant authority. </p> 
+                 </div> 
+                 <div class="box"> 
+                  <h4><u>5.3. Accepted payment methods</u></h4> 
+                  <p>The customer may pay with the payment methods specified at Checkout. The availability of such payment methods is dependent on his/her geographical location. The customer agrees to pay in full the prices and in advance for any purchases he/she make either by credit or debit card concurrent with his/her online order or by other payment means acceptable.</p> 
+                  <p>The customer acknowledge and agree that (i) he/she will be charged by Global-e or one of its third party payment processors (“<b>Payment Processor</b>”), through the payment method he/she have selected for his/her order and such other amounts payable under these Terms that may be due in connection with the order; (ii) he/she will provide valid and current information about himself/herself (iii) Givenchy and Global-e on its behalf may use the tools, software or services of Payment Processors to process transactions on their behalf; and (iv) he/she may be charged with additional fees (such as foreign transaction free or cross border fee) or charges imposed by his/her bank or credit/debit card issuer, and as these are not our charges or fees, GIVENCHY or Global-e have no control over such charges or fees nor do GIVENCHY or Global-e have any way to mitigate such charges or fees, as this is purely up to the relationship and commercial terms between the customer and customer bank or credit/debit card issuer, and GIVENCHY or Global-e also have no way of knowing in advance whether customer will be charged such charges or fees, as each bank and credit/debit issuer has its own policy, and GIVENCHY and Global-e commitment is to acquire the amount set at checkout in the customer local currency.</p> 
+                  <p>Depending on customer location, payment may be routed through Global-e’s affiliate (i.e. Global-e Australia Pty Ltd or Global-e NL B.V.).</p> 
+                  <p>If the payment method selected by the customer at checkout supports an authorization mechanism (e.g., most credit/debit cards), when the order is placed, only the applicable amount will be authorized. The customer will be charged only after the Product has been dispatched to him/her, unless the order is a “pre-order” or a similar type of order, in which case the charge could be made even before the Product has been dispatched, depending on the particulars of the pre-ordered Product. If the payment method that customer selected does not support an authorization mechanism, the charge will be immediate upon placing the order (or such other timing set by that specific payment method you used, if applicable). The customer will be charged the full order amount even if the order is dispatched in parts. Where PayPal/PayPal Express is offered as a payment method, the full amount of the purchase may be taken immediately following the placement of customer order. Pre-payment shall not affect customer legal rights under these Terms (including for example any right of refund).</p> 
+                  <p>Payment Invoice with Klarna: in certain jurisdictions only, you may be offered the opportunity to purchase goods using the solution “Klarna” as a payment method. The terms and conditions which will apply to payment by invoice with Klarna can be found <a href="http://cdn.klarna.com/1.0/shared/content/legal/terms/EID/en_de/invoice?fee=0">here</a>, nothing that German (not English) is the governing and binding language of such terms and conditions. Eligibility for use of the Klarna invoicing payment method will be determined by Klarna in their sole discretion and Global-e and GIVENCHY accept no liability in respect of your use of Klarna as a payment method. Where you choose to purchase the Product using payment by invoice with Klarna you will be sharing your personal data with Klarna end the terms of <a href="http://cdn.klarna.com/1.0/shared/content/legal/terms/0/de_de/privacy">Klarna’s privacy policy</a> shall apply to their use of your personal information.</p> 
+                  <p>Global-e on behalf of GIVENCHY will process customer’s payment for the Product. Global-e will take reasonable care to keep the details of customer’s order and payment secure however (in the absence of material negligence) Givenchy and Global-e cannot be held liable for any loss customer may suffer if a third party procures unauthorized access to any data you provide when accessing or ordering from the Website.</p> 
+                  <p>In accordance with regulations on personal data protection (French Law “Informatique et Libertés” n° 78-17 of January 6, 1978 amended by Law n° 2004-801 of August 6, 2004, the European General Data Protection Regulation of April 27, 2016, and French implementation law n°2018-493 of June 20, 2018 on the protection of personal data) and to any other applicable laws , the customer has the right to access, rectify, and oppose all his/her personal data at any time by writing, via mail and with proof of identity, to GIVENCHY - Customer Service – [159, avenue Charles de Gaulle, 92521 Neuilly-Sur-Seine cedex, France or to mydata@givenchy.com].</p> 
+                 </div> 
+                 <div class="box"> 
+                  <h3>6. Reservation of ownership</h3> 
+                  <p>The title to and ownership of the Product ordered is passed to customer the moment the Product is dispatched to customer (provided customer may have made full payment of the Product price plus delivery charges and any other charges payable under these Terms, as applicable).</p> 
+                  <p>Risk of damage or loss to the Product passes to customer on delivery to him/her or to somebody identified by customer to carry or take possession of the Product on his/her behalf.</p> 
+                  <p>Customer will be considered the ‘importer of record’ of the Product, and Global-e (or someone on its behalf) will only be facilitating the importation on customer’s behalf as its agent. Customer is responsible for assuring that the Product can be lawfully imported to the destination, and customer therefore needs to comply with all applicable laws, regulations, certifications and rules of the destination into which customer imports the Product.</p> 
+                  <p>To the extent permitted under the applicable laws, please note that documentation such as product care and handling instructions may not be in the language of the customer’s destination; customer may not have available manufacturer’s or other service options for the Products or parts thereof; the Product (and accompanying materials) may not be designed in accordance with the standards of the destination to which it was ordered, product regulations, specifications or labelled in accordance with the requirements applicable in the destination or in customer or the destination language Givenchy Korea.</p> 
+                 </div> 
+                 <div class="box"> 
+                  <h3>7. Terms of delivery</h3> 
+                  <p>GIVENCHY do not charge customers for shipping and handling.</p> 
+                  <p>The customer acknowledges and agrees that Global-e or one of its third-party fulfilment services providers acting on its behalf, including GIVENCHY (each a “<b>Fulfilment Provider</b>”) may handle the delivery and fulfilment of his/her order, and that Global-e has sole discretion as to the Fulfilment Provider it chooses to use.</p> 
+                  <p>Not all Products can be delivered anywhere (due to limitation imposed on the Product or by the destination) but the Checkout will not permit customer to submit his/her order if the Product cannot be delivered to his/her specific address.</p> 
+                  <p>Delivery will be complete when the Product will be delivered to the address which the customer specifies when ordering (that may include the port of entrance to the destination as specified on the Checkout, in case the customer have selected not to pre-pay customs duties).</p> 
+                  <p>Different parts of the customer order may be delivered on different dates. Unless otherwise stated, and subject to applicable laws, delivery dates given on Checkout (or on the Website) are estimates only. The customer order will be fulfilled by the delivery date set out in the Order Confirmation or, if no delivery date is specified, then within 30 days after the date of the Order Confirmation, unless there are exceptional circumstances (pre-order for example). Delivery timeframes are affected by your delivery address. Global-e and GIVENCHY is unable to specify an exact delivery date and time.</p> 
+                  <p>GIVENCHY also offers the customer the option of purchasing a preview of selected products from its future collections. In this case, a special delivery time frame will be provided to the customer when placing the order. It should be noted that this time frame may be longer than thirty (30) days from the order.</p> 
+                  <p>Neither Global-e nor GIVENCHY has liability for any losses arising from delay in delivery to the extent that this is due to circumstances beyond its reasonable control and where neither Global-e nor GIVENCHY could have taken reasonable steps to deal with the delay.</p> 
+                  <p>If the customer receives notification of an unsuccessful attempted delivery, it is his/her responsibility to use the details provided to contact the delivery company to arrange re-delivery. If the customer has selected a delivery method that does not require a delivery to be signed for and nobody is available to receive the Product, Global-e reserve the right to leave them at the doorstep, hall or reception as available.</p> 
+                  <p>If the customer notices an anomaly on the package (damaged, opened, traces of liquid, etc.) he/she must, if possible, (i) refuse the package, or, if this is not possible, (ii) he/she must accept the delivery, not open the package, and, must imperatively keep the disputed package.</p> 
+                  <p>The customer must contact GIVENCHY as soon as possible, either by e-mail at contact@givenchy.com, or by phone at +33.1.44.31.19.52 (cost of a local call for Metropolitan France and cost of a standard international call to Metropolitan France for other countries)</p> 
+                  <p>GIVENCHY will then carry out all the necessary inspections and may, depending on the case and the customer’s choice, and subject to the return of the entire disputed package by the customer, cancel and refund the order according to this Terms of Sale.</p> 
+                 </div> 
+                 <div class="box"> 
+                  <h3>8. Sending of receipt by mail</h3> 
+                  <p>The customer has a period of twelve (12) months from the date of the Product's delivery to request the sending of a receipt via postal service by contacting Customer Service by telephone at +33.1.44.31.19.52 (cost of a local call for Metropolitan France and cost of a standard international call to Metropolitan France for other countries) Monday to Saturday from 10 a.m. to 7 p.m. except holidays. </p> 
+                 </div> 
+                 <div class="box"> 
+                  <h3>9. Right of withdrawal – returns, exchanges, refunds</h3> 
+                  <p>The customer has a right to cancel his/her order subject to the provisions set our below. This right is not affected by any separate returns policy in these Terms.</p> 
+                  <p>The cancellation period will expire after 30 days after the day of delivery. If the customer has ordered several Products during one order, or the Products have been delivered in several stages, the cancellation period will not begin until he/she have physically taken possession of the last product or the last part of the delivery.</p> 
+                  <p>To exercise the right to cancel, the customer must inform GIVENCHY of his/her decision to cancel his/her order by a clear statement. Such statement can be made through the return process included in his/her parcel and under his link for all cross-border orders.</p> 
+                  <p>Personalized Products are considered as final sale and cannot be returned for exchange or refund.</p> 
+                  <p>To the extent permitted under applicable laws, the customer can’t cancel the order for the supply of sealed goods which are not suitable for return due to health protection or hygiene reasons, if they become unsealed after delivery. The customer must return the Product delivered in a new and unused state, in perfect condition with all protective or other materials in place and tags and stickers attached to them (if applicable), as well as with the original box/container, including all accessories and documents. For footwear, the sole must also be intact: trying on shoes while standing on carpet or rugs is therefore highly recommended. Articles returned incomplete, worn, damages, deteriorated, dirtied or in any other state that could reasonably suggest that they have been used or worn will not be refunded. </p> 
+                  <p>The customer must return the Product delivered in a new and unused state, in perfect condition with all protective or other materials in place and tags and stickers attached to them (if applicable), as well as with the original box/container, including all accessories and documents. For footwear, the sole must also be intact: trying on shoes while standing on carpet or rugs is therefore highly recommended. Articles returned incomplete, worn, damages, deteriorated, dirtied or in any other state that could reasonably suggest that they have been used or worn will not be refunded.</p> 
+                  <p>Depending on customer geography, when payment was routed through Global-e Australia Pty Ltd. or Global-e NL B.V., Global-e’s affiliates, refund shall be made accordingly.</p> 
+                  <p>Title and risk of the returned Product will not be taken back or assumed until it physically arrives back to the returns facility.</p> 
+                 </div> 
+                 <div class="box"> 
+                  <h4><u>9.1 Refunds</u></h4> 
+                  <p>Global-e will refund customer within 14 days from receipt of his/her cancellation, but Global-e can delay refunding to customer if the Product or evidence that he/she returned the Product have not been received by Global-e or GIVENCHY. Global-e will make the reimbursement using the same means of payment as customer used for the initial transaction, unless expressly agreed otherwise. In any event, the customer will not incur any fees as a result of the reimbursement. The customer must be aware that any supplementary costs arising of the fact that the customer chose a type of delivery other than the delivery offered by Givenchy and Global-e will not be refundable.</p> 
+                  <p>If the customer has paid Import Charges in connection with its order (either pre-paid at Checkout or paid upon receipt of the order directly to the applicable authority), customer acknowledge that (i) he must seek reimbursement directly form the applicable authority in his destination, (ii) it will be his/her sole responsibility to claim such Import Charges back from the applicable authority in his/her destination, and (iii) GIVENCHY and Global-e cannot guarantee that such claim will be successful.</p> 
+                  <p>In addition, each bank may have specific processing times when it comes to carrying out a refund on your card, depending on processing times. This varies among card issuers, and Global-e are not in a position to accelerate this process, which is beyond our control.</p> 
+                 </div> 
+                 <div class="box"> 
+                  <h4><u>9.2.bis No exchange</u></h4> 
+                  <p>No exchange of Products purchased electronically will be made by GIVENCHY.</p> 
+                 </div> 
+                 <div class="box"> 
+                  <h3>10. Legal guarantees</h3> 
+                  <p>The Products sold through the Website/Checkout are subject to the legal warranty conditions provided for by Articles L217-4 et seq. of the French Consumer Code, and by Articles 1641 et seq. of the French Civil Code, to the exclusion of all other warranties:</p> 
+                  <p><u><i>Article 1648 first paragraph of the French Civil Code:</i></u></p> 
+                  <p><i>“An action resulting from redhibitory defects must be brought by the buyer within two years from the discovery of the defect.”</i></p> 
+                  <h3>11. Information/claims</h3> 
+                  <p>For any information, claim, or question relating to these Terms of Sale, the Products themselves or carrying out an order, the customer should contact GIVENCHY Customer Service 159, avenue Charles de Gaulle, 92521 Neuilly-Sur-Seine cedex, France) by telephone: +33.1.44.31.19.52 (cost of a local call for Metropolitan France and cost of a standard international call to Metropolitan France for other countries)</p> 
+                  <p>If customer has any questions or complaints about Global-e, these Terms or the Checkout, please contact Global-e at <a href="mailto:service@Global-e.com">service@Global-e.com</a> or at its trading address 320 rue Saint-Honoré, 75001 Paris, France.</p> 
+                  <p>If customer is making a purchase from Australia, customer may contact Global-e at global-eau@global-e.com or at Australian trading address 34 Quin St., Melbourne, VIC, 3000 Australia.</p> 
+                 </div> 
+                 <div class="box"> 
+                  <h3>12. Electronic Files/Privacy</h3> 
+                  <p>As part of the management and tracking of orders placed through the Website and Checkout, GIVENCHY and Global-e is required to gather and process personal data relating to the customers. This information, which is intended for the persons authorized by their function to possess it within GIVENCHY or Global-e (as applicable), and where applicable, by authorized third parties, is necessary for the processing and tracking of customers’ requests or orders, in order to better meet their expectations, as well as prevent any fraudulent use of their payment methods or identities. Both parties process personal data of the customers as data controllers in their own rights. As two separate data controllers neither Global-e nor Givenchy control the processing of customer personal data by the other party.</p> 
+                  <p>In accordance with the Regulations on Personal Data Protection (the aforementioned French Law “Informatique et Libertés”, the European General Data Protection Regulation of April 27, 2016 and any national law supplementing it), any person whose data is subject to processing has a right of opposition for legitimate reasons, a right of access, as well as a right to rectify, limit or delete information concerning them which is no longer relevant, a right to portability, a right of opposition at any time in the context of an opposition to the use of data for commercial purposes, as well as a right to communicate directives relating to the fate of their data after their death. These rights can be exercised according to the terms indicated in the confidentiality and Personal Data Protection Policy of this Website, accessible at following link: <a href="https://www.givenchy.com/fr/fr/privacy-policy.html">Personal Data Protection Policy and Global-e Privacy Policy.</a></p> 
+                  <div class="box"> 
+                   <h3>13. Force Majeure</h3> 
+                   <p>The performance by GIVENCHY and Global-e of all or part of its obligations will be suspended upon the occurrence of an event of force majeure according to article 1218 of the French Civil Code which would impede or delay such performance.</p> 
+                   <p>GIVENCHY will inform the customer of the occurrence of any such fortuitous event or event of force majeure within seven (7) days. Should this suspension continue for more than fifteen (15) days, the customer would then have the option to terminate any outstanding orders, and a refund would then be paid no later than fourteen (14) days from said termination.</p> 
+                  </div> 
+                  <div class="box"> 
+                   <h3>14. Liability</h3> 
+                   <p>Nothing in these Terms of Sale shall limit or exclude GIVENCHY’s and/or Global-e liability to customer:</p> 
+                   <ul> 
+                    <li>For death or personal injury caused by our negligence;</li> 
+                    <li>For fraudulent misrepresentation;</li> 
+                    <li>For breach of any term implied by applicable consumer rights legislation and which, by law, may not be limited or excluded;</li> 
+                    <li>For any other liability that, by law, may not be limited or excluded.</li> 
+                   </ul> 
+                   <p>GIVENCHY and Global-e will not be responsible for any loss or damages incurred by unauthorized use of customer payment card on the Checkout, and GIVENCHY and Global-e are not responsible for notifying his/her card issuer or any law enforcement authority in these instances.</p> 
+                   <p>GIVENCHY cannot guarantee that the Website will be uninterrupted or error-free and Global-e cannot guarantee that the Checkout will be uninterrupted or error-free. Global-e and GIVENCHY are entitled without notice and without liability to suspend the Website or the Checkout for repair, maintenance, improvement or other technical reason.</p> 
+                   <p>The Checkout may contain links to third party websites or services that are not owned or controlled by Global-e or GIVENCHY. Global-e and GIVENCHY is not affiliated with, has no control over, and assume no responsibility for the content, privacy policies, or practices of, any third-party websites. Customer: (i) is solely responsible and liable for customer’s use of and linking to third party websites and any content that customer may send or post to a third-party website; and (ii) expressly release Global-e and GIVENCHY from any and all liability arising from customer’s use of any third-party website. Accordingly, customer is encouraged to read the terms and conditions and privacy policy of each third-party website that customer may choose to visit.</p> 
+                   <p>The Checkout may contain links to third party websites or services that are not owned or controlled by Givenchy Korea or GIVENCHY. Givenchy Korea and GIVENCHY is not affiliated with, has no control over, and assume no responsibility for the content, privacy policies, or practices of, any third-party websites. Customer: (i) is solely responsible and liable for customer’s use of and linking to third party websites and any content that customer may send or post to a third-party website; and (ii) expressly release Givenchy Korea and GIVENCHY from any and all liability arising from customer’s use of any third-party website. Accordingly, customer is encouraged to read the terms and conditions and privacy policy of each third-party website that customer may choose to visit.</p> 
+                  </div> 
+                  <div class="box"> 
+                   <h3>15. Language of the contract</h3> 
+                   <p>The Website and the Terms of Sale are available in English.</p> 
+                  </div> 
+                  <div class="box"> 
+                   <h3>16. Applicable Law – Disputes</h3> 
+                   <p>These Terms and Service are governed and interpreted in accordance with the laws of the Republic of Korea. In the event of a dispute arising in connection with the fulfillment of the order, you may refer the dispute to any other proceedings for mediation or dispute mediation. In the event that negotiations are not possible between the parties, the parties may file a lawsuit in the competent court of the Republic of Korea under the Civil Procedure Act of the Republic of Korea.</p> 
+                   <p>Givenchy KoreaGivenchy Korea</p> 
+                  </div> 
+                  <div class="box"> 
+                   <h3>17. Intellectual Property</h3> 
+                   <p>Any access or use of the Website/Checkout for any reason other than personal, non-commercial use is prohibited. Customer further acknowledge that any other use of the material and content of the Checkout/Website is strictly prohibited and customer agrees not to (and agree not to assist or facilitate any third party to) copy, reproduce, transmit, publish, display, distribute, commercially exploit or create derivative works of such material and content.</p> 
+                   <p>Unless otherwise stated, the copyright and other intellectual property rights in the content on the Checkout are owned by Global-e or its licensors and on the Website are owned by GIVENCHY or its licensors.</p> 
+                  </div> 
+                  <h3>18. Miscellaneous</h3> 
+                  <p>If any provision or provisions of these Terms shall be held to be invalid, illegal or unenforceable, that provision shall be enforced to the fullest extent permitted by applicable law, and the validity, legality and enforceability of the remaining provisions shall not in any way be affected or impaired.</p> 
+                  <p>Headings used in these Terms are for information and not binding.</p> 
+                  <p>Any failure by either party to exercise or enforce any right or provision of these Terms does not mean this is a “waiver” (i.e. that it cannot be enforced later). If any part of these Terms is ineffective or unenforceable for any reason, then it will be replaced with a provision which as far as possible achieves the same purpose and the rest of these Terms shall continue to apply. Global-e may assign these Terms to a third party, but this will not affect customer’s rights or obligations. A person who is not a party to these Terms shall have no rights to enforce any term of these Terms except insofar as expressly stated otherwise.</p> 
+                  <p>Global-e and GIVENCHY reserve the right to access, read, preserve, and disclose any information obtained in connection with the order, and your use of the Checkout, as Global-e or GIVENCHY reasonably believes is necessary to: (i) satisfy any applicable law, regulation, legal process, subpoena or governmental request, (ii) enforce these Terms, including to investigate potential violations of them, (iii) detect, prevent, or otherwise address fraud, security or technical issues, (iv) respond to your support requests, or (v) protect the rights, property or safety of Global-e, GIVENCHY or the public.</p> 
+                  <p>These Terms constitute the entire agreement with respect to the subject matter of the order.</p> 
+                 </div> 
+                </div> 
+            </div>
+    </div>
+  
+    <footer>
+        <div>
+            <a href="index.html" class="mainlogo">GIVENCHY</a>
+            <div class="footerWrapper">
+                <div class="leftContainer">
+                    <div>
+                        <h4>STORE LOCATOR</h4>
+                        <P>Enter a location to find the nearest GIVENCHY Stores</P>
+                        <form>
+                            <div>
+                                <input type="text" placeholder="Search by city or postcode">
+                                <button type="submit">Search</button> 
+                            </div>
+                        </form>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="ft_contect.html">CONTECT US</a></li>
+                            <li><a href="ft_Privacy_Policy.html">LEGEL</a></li>
+                            <li><a href="ft_about.html">ABOUT</a></li>
+                            <li><a href="ft_customer_survice.html">CUSTOMER SURVICE</a></li> 
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="https://www.instagram.com/givenchy/" target="_blank">INSTAGRAM</a></li>
+                            <li><a href="https://www.facebook.com/Givenchy" target="_blank">FACEBOOK</a></li>
+                            <li><a href="https://twitter.com/givenchy" target="_blank">TWITTER</a></li>
+                            <li><a href="https://www.youtube.com/user/givenchychannel" target="_blank">YOUTUBE</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="rightContainer">
+                    <h4>SUBSCRIBE TO NEWSLETTER</h4>
+                    <form>
+                        <div class="footerSearchInput">
+                            <input type="text" placeholder="Search by city or postcode">
+                            <button type="submit">Search</button> 
+                        </div>
+                    </form> 
+                    <select>
+                        <option>COUNTRY &amp; LANGUAGE</option>
+                        <option>South Korea</option>
+                        <option>English</option>
+                    </select>           
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GIVENCHY</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="js/givenchy.js"></script>
+        <link rel="stylesheet" href="css/import.css">
+    </head>
+<body>
+    
+    <div id="createAccountPanel">
+        <input type="button" value="CLOSE" class='closeBtn'>
+            <fieldset>
+                <legend>CREAT ACCOUNT</legend>
+                <ul>
+                    <li>
+                        <label for="fName">FIRST NAME*</label>
+                        <input type="text" id="fName">
+                    </li>
+                    <li>
+                        <label for="lName">LAST NAME*</label>
+                        <input type="text" id="lName">
+                    </li>
+                    <li>
+                        <label for="createail">EMAIL*</label>
+                        <input type="email" id="createail">
+                    </li>
+                    <li>
+                        <label for="password">PASSWORD*</label>
+                        <input type="password" id="password">
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>CONSENT TO PERSONAL DATA PROCESSING</legend>
+                <div>
+                    <input type="checkbox" id="agreeCheckbox_1">
+                    <label for="agreeCheckbox_1"> 
+                        I agree to the collection and use of my personal data for marketing purposes
+                    </label>
+                </div>
+                <div>
+                    <input type="checkbox" id="agreeCheckbox_2">
+                    <label for="agreeCheckbox_2">
+                        I agree to the collection, disclosure or processing of my personal data for profiling purposes  
+                    </label>
+                </div>
+            </fieldset>
+            <input type="button" value="CREAT ACCOUNT" data-panel="createAccountPanel" class="panelBtn">
+    </div>
+
+    <div id="resetPanel"> 
+        <input type="button" value="CLOSE" class="closeBtn">
+            <fieldset>
+                <legend>RESET PASSWORD REQUEST</legend>
+                <P>Provide the e-mail address of your account to receive a password reset e-mail.</P>
+                <div>
+                    <label for="resetemail">EMAIL*</label>
+                    <input type="text" id="resetemail">
+                </div>
+                <span>All fields marked with an * are mandatory</span>
+                <input type="button" value="RESET PASSWORD" class="resetpassword">
+            
+            </fieldset>
+    
+    </div>
+
+    <div id="loginPanel">
+        <fieldset> 
+            <legend>LOGIN</legend>
+            <div class="loginSection">
+                <div>
+                    <label for="loginemail">EMAIL*</label>
+                    <input type="text" id="loginemail" placeholder="Email">
+                </div>
+                <div>
+                    <label for="loginpassword">PASSWORD*</label>
+                    <input type="text" id="loginpassword" placeholder="Password">
+                </div> 
+            </div>
+            <div class="buttonSection">
+                <div>
+                    <input type="button" value="Forget Password" data-panel="resetPanel" class="panelBtn"> 
+                </div>
+                <div>
+                    <label for="checkbox" class="remember">
+                        Remember me
+                    <input type="checkbox" name="checkbox" id="checkbox"> 
+                    </label>
+                </div>  
+                 <div>
+                    <input type="button" value="LOGIN" data-panel="">
+                </div>
+            </div>
+            <div class="createAccountArea">
+                <h4>CREATE ACCOUNT</h4>
+                <P>- Add your favorite items to your wishlist</P>
+                <P>- Save your contact informations for a faster checkout</P>
+                <P>- Check your order status</P>
+            </div>
+            <div class="btnSection">
+                <div>
+                    <input type="button" value="CREAT ACCOUNT" data-panel="createAccountPanel" class="panelBtn" >
+                </div>
+                    <input type="button" value="CLOSE" class='closeBtn'> 
+            </div>
+        </fieldset>
+    </div>
+
+    <div id="addtobagPanel">
+        <input type="button" value="CLOSE" class='closeBtn'>
+        <div>
+            <h2>Shopping Cart</h2>
+            <form action="p_checkout.html">
+                <div class="cart">
+                    <div class="cart-products">
+                        <div class="product">
+                            <img src="images/wGift_Antigon-aToy_bag_in_Box_leather01.png" alt="Antigon-aToy_bag_in_Box_leather">
+                            <div class="product-info">
+                                <span>New</span>
+                                <p>Medium Voyou Chain bag in leather</p>
+                                <p>Color <span>Red</span></p>
+                                <div class="countComponent">
+                                    <input type="button" value="subtract">
+                                    <span>1</span>
+                                    <input type="button" value="add">
+                                    <p>$2800</p>
+                                </div>
+                                <div class="remove">
+                                    <input type="button" value="Remove" class="btn_remove">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-total">
+                    <div>
+                        <span>SUBTOTAL</span>
+                        <span>$5600</span>
+                    </div>
+                    <div>
+                        <span>TOTAL</span>
+                        <span>$5600</span>
+                    </div>
+                    <a href="p_checkout.html">Process to Checkout</a>
+                    <!-- <input type="submit" value="Process to Checkout"> -->
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="searchPanel">
+        <h4><a href="index.html">GIVENCHY</a></h4>
+        <div>
+            <input type="button" value="CLOSE" class='closeBtn'>
+            <div>
+                <input type="text" name="userSearch" id="search" placeholder="Product Search">  
+            </div>
+            <ul>
+                <li>
+                    <img src="images/search-bag-img.png" alt="search bag">
+                    <a href="list_crossbody_mini_bags.html">Bags</a>
+                </li>
+                <li>
+                    <img src="images/search-dresses-img.png" alt="search dresses">
+                    <a href="list_dresses.html">Dresses</a>
+                </li>
+                <li>
+                    <img src="images/search-jackets-img.png" alt="search jackets">
+                    <a href="list_jackets_sweatshirts.html">Jackets</a>
+                </li>
+            </ul> 
+        </div>
+    </div> 
+
+    <header>
+        <h1>
+            <a href="index.html">
+                <img src="images/Logo.png" alt="logoimg">
+            </a>
+        </h1>
+        <nav>
+            <input type="button" value="mobileFNB" class="mui">
+
+            <ul class="mobileFNB">
+                <li>
+                    <a href="list_gift-for-her.html">Gift</a>
+                </li>
+                <li>
+                    <a href="list_women.html">Women</a>
+                </li>
+                <li>
+                    <a href="list_man.html">Man</a>
+                </li>
+                <li>
+                    <a href="list_shoulder_bags.html">Bags</a>
+                </li>
+            </ul>
+            <ul>
+                <li><input type="button" value="Search" data-panel="searchPanel" class="panelBtn"></li>
+                <li><input type="button" value="Login" data-panel="loginPanel" class="panelBtn"></li>
+                <li><input type="button" value="My Bag" data-panel="addtobagPanel" class="panelBtn"></li>
+            </ul>  
+        </nav>
+    </header>
+
+    <section class="payContainer">
+        <h5>Delivery Details</h5>
+            <div>
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <ul>
+                        <li>
+                            <label for="payName">FIRST NAME*</label>
+                            <input type="text" id="payName">
+                        </li>
+                        <li>
+                            <label for="paylastName">LAST NAME*</label>
+                            <input type="text" id="paylastName">
+                        </li>
+                        <li>
+                            <label for="payeail">EMAIL*</label>
+                            <input type="email" id="payeail">
+                        </li>
+                        <li>
+                            <label for="paypassword">Phone Nember*</label>
+                            <input type="text" id="paypassword">
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Billing Details</legend>
+                    <ul>
+                        <li>
+                            <select>
+                            <option>COUNTRY</option>
+                            <option>South Korea</option>
+                            <option>Japan</option>
+                            <option>US</option>
+                            <option>UK</option>
+                            <option>Italy</option>
+                            <option>France</option>
+                            <option>Canada</option>
+                        </select>
+                        </li>
+                        <li>
+                            <label for="homeAddress">Address*</label>
+                            <input type="text" id="homeAddress">
+                        </li>
+                        <li>
+                            <label for="town">Town/City*</label>
+                            <input type="text" id="town">
+                        </li>
+                        <li>
+                            <label for="zipC">Street*</label>
+                            <input type="email" id="zipC">
+                        </li>
+                        <li>
+                            <label for="phoneN">Zip Code*</label>
+                            <input type="text" id="phoneN">
+                        </li>
+                    </ul> 
+                    <p>GIVENCHY processes the data collected above, in accordance with the GIVENCHY Privacy Policy, to enable the creation of your account, manage your order, ensure personalized follow-up, and meet statistical and research needs. Unless otherwise specified, all fields to be completed are mandatory in order to process your request. You have the right to access, rectify, delete and oppose the processing of your personal data in accordance with current legislation, which you may exercise by writing to mydata@givenchy.com.</p>
+                </fieldset> 
+            </div>
+
+            <div class="paycheck_info">
+                <ul>
+                    <li>
+                        <img src="images/wGift_Antigon-aToy_bag_in_Box_leather01.png" alt="Medium Voyou Chain bag in leather Red">
+                        <div class="bagproduct_info">
+                            <p>new</p>
+                            <dl>
+                                <dt>Medium Voyou Chain bag in leather</dt>
+                                <dd>Color Red</dd>
+                            </dl>
+                            
+                            <div class="remove">
+                                <input type="button" value="Remove" class="btn_remove">
+                            </div>
+                            <div>
+                                <span>
+                                    Qty : 1
+                                    <mark>$2800</mark>
+                                </span>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/wGift_Medium_Voyou_bag_in_leather01.png" alt="Medium_Voyou_bag_in_leather">
+                        <div class="bagproduct_info">
+                            <p>new</p>
+                            <dl>
+                                <dt>Medium Voyou Chain bag in leather</dt>
+                                <dd>Color Silver</dd>
+                            </dl>
+                            <span>
+                                Qty : 1
+                                <mark>$2800</mark>
+                            </span>
+                            <div class="remove">
+                                <input type="button" value="Remove" class="btn_remove">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div>
+                    <form action="p_finalpay.html">
+                        <dl>
+                            <dt>Subtotal</dt>
+                            <dd>$5600</dd>
+                            <dt>Shipping</dt>
+                            <dd>FREE</dd>
+                            <dt>Total</dt>
+                            <dd>$5600</dd>
+                        </dl>
+                        <input type="submit" value="Pay Now">
+                    </form>
+                </div>
+            </div>
+    </section>    
+
+    <footer>
+        <div>
+            <a href="index.html" class="mainlogo">GIVENCHY</a>
+            <div class="footerWrapper">
+                <div class="leftContainer">
+                    <div>
+                        <h4>STORE LOCATOR</h4>
+                        <P>Enter a location to find the nearest GIVENCHY Stores</P>
+                        <form>
+                            <div>
+                                <input  type="text" placeholder="Search by city or postcode">
+                                <button type="submit">Search</button> 
+                            </div>
+                        </form>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="ft_contect.html">CONTECT US</a></li>
+                            <li><a href="ft_Privacy_Policy.html">LEGEL</a></li>
+                            <li><a href="ft_about.html">ABOUT</a></li>
+                            <li><a href="ft_customer_survice.html">CUSTOMER SURVICE</a></li> 
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="https://www.instagram.com/givenchy/" target="_blank">INSTAGRAM</a></li>
+                            <li><a href="https://www.facebook.com/Givenchy" target="_blank">FACEBOOK</a></li>
+                            <li><a href="https://twitter.com/givenchy" target="_blank">TWITTER</a></li>
+                            <li><a href="https://www.youtube.com/user/givenchychannel" target="_blank">YOUTUBE</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="rightContainer">
+                    <h4>SUBSCRIBE TO NEWSLETTER</h4>
+                    <form>
+                        <div class="footerSearchInput">
+                            <input  type="text" placeholder="Search by city or postcode">
+                            <button type="submit">Search</button> 
+                        </div>
+                    </form> 
+                    <select>
+                        <option>COUNTRY &amp; LANGUAGE</option>
+                        <option>South Korea</option>
+                        <option>English</option>
+                    </select>           
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIVENCHY</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="js/givenchy.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    
+    <div id="createAccountPanel">
+        <input type="button" value="CLOSE" class='closeBtn'>
+        <fieldset>
+        <legend>CREAT ACCOUNT</legend>
+        <ul>
+            <li>
+                <label for="creatFName">FIRST NAME*</label>
+                <input type="text" id="creatFName">
+            </li>
+            <li>
+                <label for="creatlName">LAST NAME*</label>
+                <input type="text" id="creatlName">
+            </li>
+            <li>
+                <label for="createmail">EMAIL*</label>
+                <input type="email" id="createmail">
+            </li>
+            <li>
+                <label for="creatpassword">PASSWORD*</label>
+                <input type="password" id="creatpassword">
+            </li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>CONSENT TO PERSONAL DATA PROCESSING</legend>
+        <div>
+            <input type="checkbox" id="agreeCheckbox">
+            <label for="agreeCheckbox"> 
+                I agree to the collection and use of my personal data for marketing purposes
+            </label>
+        </div>
+            <input type="checkbox" id="agreetoCheckbox">
+            <label for="agreetoCheckbox">
+                I agree to the collection, disclosure or processing of my personal data for profiling purposes  
+            </label>
+    </fieldset>
+    <input type="button" value="CREAT ACCOUNT" data-panel="createAccountPanel" class="panelBtn">
+    </div>
+
+    <div id="resetPanel"> 
+        <input type="button" value="CLOSE" class="closeBtn">
+            <fieldset>
+                <legend>RESET PASSWORD REQUEST</legend>
+                <P>Provide the e-mail address of your account to receive a password reset e-mail.</P>
+                <div>
+                    <label for="email">EMAIL*</label>
+                    <input type="text" id="email">
+                </div>
+                <span>All fields marked with an * are mandatory</span>
+                <input type="button" value="RESET PASSWORD" class="resetpassword">
+            
+            </fieldset>
+    
+    </div>
+
+    <div id="loginPanel">
+        <fieldset> 
+            <legend>LOGIN</legend>
+            <div class="loginSection">
+                <div>
+                    <label for="loginemail">EMAIL*</label>
+                    <input type="text" id="loginemail" placeholder="Email">
+                </div>
+                <div>
+                    <label for="password">PASSWORD*</label>
+                    <input type="text" id="password" placeholder="Password">
+                </div> 
+            </div>
+            <div class="buttonSection">
+                <div>
+                    <input type="button" value="Forget Password" data-panel="resetPanel" class="panelBtn"> 
+                </div>
+                <div>
+                    <label for="checkbox" class="remember">
+                        Remember me
+                    <input type="checkbox" name="checkbox" id="checkbox"> 
+                    </label>
+                </div>  
+                 <div>
+                    <input type="button" value="LOGIN" data-panel="">
+                </div>
+            </div>
+            <div class="createAccountArea">
+                <h4>CREATE ACCOUNT</h4>
+                <P>- Add your favorite items to your wishlist</P>
+                <P>- Save your contact informations for a faster checkout</P>
+                <P>- Check your order status</P>
+            </div>
+            <div class="btnSection">
+                <div>
+                    <input type="button" value="CREAT ACCOUNT" data-panel="createAccountPanel" class="panelBtn" >
+                </div>
+                    <input type="button" value="CLOSE" class='closeBtn'> 
+            </div>
+        </fieldset>
+    </div>
+
+    <div id="addtobagPanel">
+        <input type="button" value="CLOSE" class='closeBtn'>
+        <div>
+            <h2>Shopping Cart</h2>
+            <form action="p_checkout.html">
+                <div class="cart">
+                    <div class="cart-products">
+                        <div class="product">
+                            <img src="images/wGift_Antigon-aToy_bag_in_Box_leather01.png" alt="Antigon-aToy_bag_in_Box_leather">
+                            <div class="product-info">
+                                <span>New</span>
+                                <p>Medium Voyou Chain bag in leather</p>
+                                <p>Color <span>Red</span></p>
+                                <div class="countComponent">
+                                    <input type="button" value="subtract">
+                                    <span>1</span>
+                                    <input type="button" value="add">
+                                    <p>$2800</p>
+                                </div>
+                                <div class="remove">
+                                    <input type="button" value="Remove" class="btn_remove">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-total">
+                    <div>
+                        <span>SUBTOTAL</span>
+                        <span>$2800</span>
+                    </div>
+                    <div>
+                        <span>TOTAL</span>
+                        <span>$2800</span>
+                    </div>
+                    <a href="p_checkout.html">Process to Checkout</a>
+                    <!-- <input type="submit" value="Process to Checkout"> -->
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="searchPanel">
+        <h4><a href="index.html">GIVENCHY</a></h4>
+        <div>
+            <input type="button" value="CLOSE" class='closeBtn'>
+            <div>
+                <input type="text" name="userSearch" id="search" placeholder="Product Search">  
+            </div>
+            <ul>
+                <li>
+                    <img src="images/search-bag-img.png" alt="search bag">
+                    <a href="list_crossbody_mini_bags.html">Bags</a>
+                </li>
+                <li>
+                    <img src="images/search-dresses-img.png" alt="search dresses">
+                    <a href="list_dresses.html">Dresses</a>
+                </li>
+                <li>
+                    <img src="images/search-jackets-img.png" alt="search jackets">
+                    <a href="list_jackets_sweatshirts.html">Jackets</a>
+                </li>
+            </ul> 
+        </div>
+    </div> 
+
+    <header>
+        <h1>
+            <a href="index.html">
+                <img src="images/Logo.png" alt="logoimg">
+            </a>
+        </h1>
+        <nav>
+            <input type="button" value="mobileFNB" class="mui">
+
+            <ul class="mobileFNB">
+                <li>
+                    <a href="list_gift-for-her.html">Gift</a>
+                </li>
+                <li>
+                    <a href="list_women.html">Women</a>
+                </li>
+                <li>
+                    <a href="list_man.html">Man</a>
+                </li>
+                <li>
+                    <a href="list_shoulder_bags.html">Bags</a>
+                </li>
+            </ul>
+            <ul>
+                <li><input type="button" value="Search" data-panel="searchPanel" class="panelBtn"></li>
+                <li><input type="button" value="Login" data-panel="loginPanel" class="panelBtn"></li>
+                <li><input type="button" value="My Bag" data-panel="addtobagPanel" class="panelBtn"></li>
+            </ul>  
+        </nav>
+    </header>
+
+    <div class="customer_container">
+        <nav class="customer_sidebar">
+            <ul>
+                <li><a href="ft_customer_survice.html" class="active" >FAQ</a></li>
+                <li><a href="ft_customer_survice_shipping.html">Shipping & Payments</a></li>
+                <li><a href="ft_customer_survice_return.html">Return & Refund</a></li>
+                <li><a href="ft_customer_survice_track.html" >Track Order</a></li>
+            </ul>
+        </nav>
+
+        <div class="question_container"> 
+            <h1>FREQUENTLY ASKED QUESTIONS</h1>
+            <div class="accordion">
+                <h2>Purchase</h2>
+                <ul class="accordion_box">
+                    <li>
+                        <h3>
+                            How do I place an order online or by phone?
+                            <span><i class="bx bxs-chevron-down"></i></span>
+                        </h3>
+                        <div class="answer">
+                            <p>Need help, information, or want to place an order by phone?<br>
+                            Our team is available to respond to your questions in English, or Korean, Monday to Friday from 9AM to 6PM Seoul time. Contact us by calling 1551-2201 or via e-mail directly at contact.kr@givenchy.com . We can assist you with your browsing experience and purchases.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>
+                            How to give a Givenchy gift?
+                            <span><i class="bx bxs-chevron-down"></i></span>
+                        </h3>
+                        <div class="answer">
+                            <p><span>All our products are delivered in GIVENCHY wrapping. Upon confirmation of your order, you will have the option to request gift wrapping; this service is offered free of charge.</span></p> 
+                            <p>&nbsp;</p> 
+                            <p><span>Personalized message</span></p> 
+                            <p><span>We offer the option to include a personalized message when sending a gift order.</span></p> 
+                            <p><span>Please note that GIVENCHY reserves the right to withhold or refuse the acceptance of a product order accompanied by messages containing statements contrary to the law or morality.</span></p> 
+                            <p>&nbsp;</p> 
+                            <p><span>Receipt and Price</span></p> 
+                            <p><span>The receipt (in PDF format) of your order on Givenchy.com will be sent electronically to your email address. This receipt, which we advise you to print and keep, will also be available by logging in to your Customer Account.</span></p> 
+                            <p><span>The price will be removed from the label of the products you ordered and the receipt will not be attached to your order at the time of shipment. You may receive a paper version of your receipt upon request from Customer Service. This request, accompanied by your proof of identity, must be sent within 12 months from the issue of the receipt received by email.</span></p> 
+                            <p><span>To contact our Customer Service, please consult the “Contact” section of the Site.</span></p> 
+                            <p>&nbsp;</p> 
+                        </div>
+                    </li>
+                    <li>
+                        <h3>
+                            How secure are online payments?
+                            <span><i class="bx bxs-chevron-down"></i></span>
+                        </h3>
+                        <div class="answer">
+                            <p>All transactions made on the Givenchy.com site are highly secure. An SSL encryption system is in place to protect personal and payment data.<br>
+                            Givenchy agrees to not store your credit card details.
+                            In addition, we enforce the security of payments through the secure 3D system for Visa, Mastercard and American Express cards thus equipped. An additional step takes place upon payment, verifying the cardholder's identity and confirming the transaction. Each bank has its own authentication. For any questions regarding your 3D Secure code, please contact your bank directly.<br>
+                            Our Customer Service may also conduct verifications and contact you before approving the transaction and confirming the order to collect more information in order to fight against fraud and guarantee your protection.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>
+                            How secure are online payments?
+                            <span><i class="bx bxs-chevron-down"></i></span>
+                        </h3>
+                        <div class="answer">
+                            <p>All transactions made on the Givenchy.com site are highly secure. An SSL encryption system is in place to protect personal and payment data.<br>
+                            Givenchy agrees to not store your credit card details.
+                            In addition, we enforce the security of payments through the secure 3D system for Visa, Mastercard and American Express cards thus equipped. An additional step takes place upon payment, verifying the cardholder's identity and confirming the transaction. Each bank has its own authentication. For any questions regarding your 3D Secure code, please contact your bank directly.<br>
+                            Our Customer Service may also conduct verifications and contact you before approving the transaction and confirming the order to collect more information in order to fight against fraud and guarantee your protection.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>
+                            After-Sales Service
+                            <span><i class="bx bxs-chevron-down"></i></span>
+                        </h3>
+                        <div class="answer">
+                            <p>For any questions regarding the purchase of your item in a Givenchy store, please contact our Customer Service : contact@givenchy.com / 00 800 0000 1952.<br>
+                            Our team of advisors will assist you in English, French or Italian from Monday to Saturday from 10AM to 7PM Paris time. (call charges vary according to landline rates to the location called).</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>
+                            Anti-Counterfeit
+                            <span><i class="bx bxs-chevron-down"></i></span>
+                        </h3>
+                        <div class="answer">
+                            <p>COUNTERFEIT GIVENCHY PRODUCTS<br>
+                                As a leading luxury brand, Givenchy addresses the issue of counterfeiting every day.<br>
+                                When a customer purchases a Givenchy product, they expect excellence of craftmanship and quality that lasts. Conversely, counterfeit replicas are most often made of inferior materials, with a demonstrable lack of know-how and artisanship, resulting in a product that does not stand the test of time.<br>
+                                Counterfeit products infringe on our designers creativity and misappropriate the expertise of our craftspeople. The sole guarantee of quality and product durability lies in purchasing genuine Givenchy products.<br>
+                                At Givenchy, we take the issue of counterfeiting extremely seriously. We constantly monitor and report purveyors of counterfeit wherever they are found, online and off.<br>
+                                Authentic Givenchy products are sold exclusively in Givenchy stores, through our official website www.givenchy.com, and via a selective network of approved retailers.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>
+                            How do I proceed to payment?
+                            <span><i class="bx bxs-chevron-down"></i></span>
+                        </h3>
+                        <div class="answer">
+                            <p>GIVENCHY accepts the following payment methods for online purchases: local credit cards, Naver Pay, Pay Co, and bank transfer. An authorization application will be sent to your bank. Please note that your billing address must be identical to the one listed on your credit card statement. At present, we do not accept gift cards.</p>
+                        </div>
+                    </li>
+                    <h2>Account</h2>
+                    <li>
+                        <h3>
+                            Availability of in-store items
+                            <span><i class="bx bxs-chevron-down"></i></span>
+                        </h3>
+                        <div class="answer">
+                            <p>The Givenchy.com website allows you to check the availability of our items in a selection of stores.<br>By browsing through our product categories, you will have the option of using the “Search by Store” option.<br>Select the store of your choice and discover the selection available at this location. By selecting a store that is not in the country of your location, you will be redirected to the Homepage of the relevant country. You will then be able to renew your search within the desired product category.<br> When you are on an item page, you also have the option of checking the availability of the item by clicking on the “Find in Store” button. You must first select the color and size of your item.<br>Please note that our store inventory changes frequently. The availability of an item therefore cannot be guaranteed. Please contact the store to ensure that this item is still available.<br>The Givenchy.com website provides the option of making an appointment directly by email or phone to discover or try on the consulted item. Any request for an appointment made on the website will be confirmed by the store, either by return email or by telephone. Similarly, no product reservation can be made without prior confirmation from the store. On the other hand, we encourage you to add to your wish list the products you would like to try in order to facilitate the preparation of your in-store appointment with our consultant.<br> For any questions regarding the availability of our products, please contact our Customer Service. Our team of advisors will assist you in English or Korean from Monday to Friday from 9AM to 6PM Seoul time. You can also find our stores' contact information in Store Finder.</p>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <h3>
+                            What are the types of delivery (charges and delivery times)?
+                            <span><i class="bx bxs-chevron-down"></i></span>
+                        </h3>
+                        <div class="answer">
+                            <p>Express Delivery before 6pm:<br>
+                            Delivery from Monday through Friday by 6pm for any order placed online or by phone.<br>
+                            This service is not available on holidays.<br>
+                            The expected delivery time is 2 business days after placing the order.<br>
+                            This delivery service is offered free of charge by GIVENCHY.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>
+                            How do I care for my items?
+                            <span><i class="bx bxs-chevron-down"></i></span>
+                        </h3>
+                        <div class="answer">
+                            <p><p><u>Ready-to-wear</u></p> 
+                            <p>The properties of certain materials and/or certain product&nbsp;finishes (wrinkled, lustre, etc.) are not designed to be permanent. Repeated washes will alter the clothes appearance over time. This is completely normal and gives the article&nbsp;of clothing its appeal and very special character.</p> 
+                            <p>Please be aware of the risk of color transfer&nbsp;in personal items of clothing due to fabric dye from our products. Please read the following instructions carefully:</p> 
+                            <p>&nbsp;</p> 
+                            <p><u>Printed fabrics</u></p> 
+                            <p>The printing on these fabrics are applied using traditional methods. Slight variations may arise – the visual variations between printed fabric designs are a natural result of this manufacturing process.</p> 
+                            <p>* Avoid over-exposure to direct sunlight, artificial light or sources of high heat concentration.</p> 
+                            <p>&nbsp;</p> 
+                            <p><u>Leather items</u></p> 
+                            <p>Leather is a natural material that&nbsp;needs to be handled with care. Different leathers will require care that is specifically tailored to their leather type.</p> 
+                            <p>* Try not to let your leather items rub against other objects as this may lead to color transfer</p> 
+                            <p>* Ensure your leather items are kept in a dry environment when not in use</p> 
+                            <p>* Avoid over-exposure to direct sunlight, artificial light or sources of high heat concentration.</p> 
+                            <p>&nbsp;</p> 
+                            <p><u>Embroidered and/or sequined items </u></p> 
+                            <p>Embroidered details are created using traditional techniques, even though these details give products more character they tend to be very fragile.These items therefore need to be treated with care.</p> 
+                            <p>* Avoid allowing other objects to come in contact with your product in any way that could cause visible damage</p> 
+                            <p>* Avoid over-exposing your embroidered or sequined items to direct sunlight, artificial light or sources of high heat concentration.</p> 
+                            <p>&nbsp;</p> 
+                            <p><u>Denim items</u></p> 
+                            <p>Denim items undergo specific treatments and washes which give them their unique, timeless character. Visual variations between denim items occur naturally as a result of these processes.</p> 
+                            <p>These traditional treatments and processes may result in color&nbsp;transfer&nbsp;on the fabric’s surface. With washing, the effects of this transfer&nbsp;will slowly disappear.</p> 
+                            <p>* Keep your denim items away from other light-colored fabrics, furniture, and articles&nbsp;of clothing</p> 
+                            <p>* Avoid over-exposing your denim items to direct sunlight, artificial light or sources of high&nbsp;heat concentration</p> 
+                            <p>&nbsp;</p> 
+                            <p><u>Furs</u></p> 
+                            <p>Fur is a very special product which requires very specific treatment in order&nbsp;to retain its natural beauty</p> 
+                            <p>&nbsp;</p> 
+                            <p><u>Bags</u></p> 
+                            <p>In order to maintain the integrity of your handbag, we advise&nbsp;the following precautions:</p> 
+                            <p>* Ensure your leather goods are kept in a dry environment when not in use</p> 
+                            <p>* Avoid over-exposure to direct sunlight, artificial light or sources of heat</p> 
+                            <p>* Keep leather goods away from water, oils, perfumes and cosmetics</p> 
+                            <p>* Ensure that you store your leather goods in a cool, dry place inside the protective felt pouch designed for this purpose</p> 
+                            <p>* Try not to let your leather goods rub against other objects as this may lead to colour migration.</p> 
+                            <p>&nbsp;</p> 
+                            <p><u>Leather items</u></p> 
+                            <p>* Leather is a natural material that&nbsp;needs to be handled with care, different leathers will require care that is specifically tailored to their particular leather type</p> 
+                            <p>* Exotic leathers are very delicate materials requiring a particularly high level of careful attention.</p> 
+                            <p>* Patent leather should not be kept in close proximity to other leather objects for extended periods of time, in order to prevent color transfer&nbsp;</p> 
+                            <p>* Vegetable-tanned leather is leather which is tanned using tannings found in vegetable matter. This leather is a delicate material which will develop a patina over time</p> 
+                            <p>* Ponyskin's leather (actually made from calfskin) undergoes a special tanning process which does not remove the hair from the leather. To maintain the integrity of this product, try to ensure it does not rub against other objects</p> 
+                            <p>&nbsp;</p> 
+                            <p><u>Coated canvas</u></p> 
+                            <p>* Man-made fabrics&nbsp;should be cleaned carefully using a soft, clean, slightly damp cloth</p> 
+                            <p>* Please be aware that lighter-colored materials are more prone to stains and soiling</p> 
+                            <p>&nbsp;</p> 
+                            <p><u>Metal fittings</u></p> 
+                            <p>*&nbsp;The metal fittings of your leather goods are of excellent quality and will develop a patina over time</p> 
+                            <p>&nbsp;</p> 
+                            <p><u>Jewelry</u></p> 
+                            <p>Each piece of GIVENCHY jewelry&nbsp;has been crafted using traditional techniques and the very finest materials, chosen to guarantee optimal customer satisfaction. The use of traditional techniques means that no two pieces of jewlery are exactly alike, which is exactly what generates their appeal and lends them their unique character.</p> 
+                            <p>In order to maintain the integrity of your jewelry, we advise you to take the following precautions:</p> 
+                            <p>* Handle your jewelry with care</p> 
+                            <p>* Keep your jewelry in its protective pouch</p> 
+                            <p>* Keep your jewelry away from chemical products (hairsprays / nail polishes, perfumes, creams, household cleaning products,&nbsp;insect repellents etc), as the use of these products may lead to the premature deterioration of metal, beads and certain gemstones</p> 
+                            <p>* Ensure your jewelry is kept in a dry environment when not in use and keep away from sources of heat</p> 
+                            <p>&nbsp;</p> 
+                            <p><u>Gemstones and minerals</u></p> 
+                            <p>We recommend you follow the instructions already set out in this care guide in order to ensure the minerals, stones and crystals remain in their original state and retain their natural beauty.</p> 
+                            <p>&nbsp;</p> 
+                            <p><u>Vegetable-tanned leather</u></p> 
+                            <p>This leather is tanned using tannings found in vegetable matter. It is a delicate material and its color may be subject to slight variations over time. Avoid wearing this piece of jewelry with light-colored clothes.</p> 
+                            <p>&nbsp;</p> 
+                            <p><u>Perspex</u></p> 
+                            <p>Clean using a soft, dry cloth. Keep away from water and any kind of chemical product.</p> 
+                            <p>&nbsp;</p> 
+                            <p><u>Real wood</u></p> 
+                            <p>This piece of jewelry is made from untreated wood, meaning&nbsp;it can be affected by changes in atmospheric humidity or major variations in weather conditions. Extra precautions should be taken when storing jewelry.&nbsp;</p> 
+                            <p>&nbsp;</p> 
+                            <p><u>Shoes</u></p> 
+                            <p>Every pair of GIVENCHY shoes is unique in that it has been crafted using traditional techniques and the very finest materials, chosen to guarantee optimal customer satisfaction. The use of traditional techniques means that no two pairs are exactly alike, which is exactly what generates their appeal and lends them their unique character.</p> 
+                            <p>In order to maintain the integrity of your shoes,we advise&nbsp;to take the following precautions:</p> 
+                            <p>* Ensure your shoes are kept in a dry environment when not in use</p> 
+                            <p>* Avoid over-exposure to direct sunlight, artificial light or sources of high concentration of heat</p> 
+                            <p>* Keep shoes away from water, oils, perfumes and cosmetics</p> 
+                            <p>* Ensure that you store your shoes in a cool, dry place inside the dust bags designed for this purpose</p> 
+                            <p>* Try not to let your shoes rub against other objects as this may lead to color transfer</p> 
+                            <p>&nbsp;</p> 
+                            <p><u>Leather shoes</u></p> 
+                            <p>* Different leathers will require care that is specifically tailored to their particular leather type</p> 
+                            <p>* Exotic leathers are very delicate materials requiring particularly careful attention.&nbsp;</p> 
+                            <p>* Patent leather should not be kept in close proximity to other leather objects for extended periods of time. This will help prevent color transfer</p> 
+                            <p>* Vegetable-tanned leather is leather which is tanned using tannins found in vegetable matter. This leather is a delicate material which will develop a patina over time</p> 
+                            <p>* Ponyskin leather (actually made from calfskin) is particularly precious and delicate. It has undergone a special tanning process which does not remove the hair from the leather. In order to maintain the integrity of this product&nbsp;try to ensure it does not rub against other objects.</p> 
+                            <p>&nbsp;</p> 
+                            <p><u>Fabric shoes</u></p> 
+                            <p>* Man-made fabrics&nbsp;should be cleaned carefully using a soft, clean, slightly damp cloth</p> 
+                            <p>* Please be aware that lighter-colored materials are more prone to stains and soiling</p> 
+                            <p>&nbsp;</p> 
+                            <p><u>Metal components</u></p> 
+                            <p>* The metal components of your shoes are of excellent quality and will develop a patina over time.</p> 
+                            <p>If you require any further&nbsp;information or have other questions in regards to product care and maintenance, please feel free to get in touch with any Givenchy customer service.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>
+                            How do I return a Givenchy product purchased online?
+                            <span><i class="bx bxs-chevron-down"></i></span>
+                        </h3>
+                        <div class="answer">
+                            <p>You have the option to return, free of charge, any product ordered within 14 days of its date of receipt.<br>The product must be returned in perfect condition, unworn, in its entirety (boxes, accessories, covers, labels, booklets, etc.) and in its original packaging, accompanied by a copy of the receipt. We recommend you take all necessary precautions to ensure its protection. Any damaged, used, incomplete or soiled product will not be eligible for a refund.<br>GIVENCHY does not offer exchanges.<br> Please follow the returns procedures below in order to return your products to us free of charge.<br><a href="ft_customer_survice_return.html" style="text-decoration: underline;">Return and Refund</a></p> 
+                        </div>
+                    </li>
+                    <li>
+                        <h3>
+                            How do I track my order?
+                            <span><i class="bx bxs-chevron-down"></i></span>
+                        </h3>
+                        <div class="answer">
+                            <p>Givenchy will inform you by email of the progress of your order. You can also track the progress of your order in My Order section of your online Customer Account at Givenchy.com or by contacting our Customer Service.</p>   
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+  
+
+
+    <footer>
+        <div>
+            <a href="index.html" class="mainlogo">GIVENCHY</a>
+            <div class="footerWrapper">
+                <div class="leftContainer">
+                    <div>
+                        <h4>STORE LOCATOR</h4>
+                        <P>Enter a location to find the nearest GIVENCHY Stores</P>
+                        <form>
+                            <div>
+                                <input type="text" placeholder="Search by city or postcode">
+                                <button type="submit">Search</button> 
+                            </div>
+                        </form>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="ft_contect.html">CONTECT US</a></li>
+                            <li><a href="ft_Privacy_Policy.html">LEGEL</a></li>
+                            <li><a href="ft_about.html">ABOUT</a></li>
+                            <li><a href="ft_customer_survice.html">CUSTOMER SURVICE</a></li> 
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="https://www.instagram.com/givenchy/" target="_blank">INSTAGRAM</a></li>
+                            <li><a href="https://www.facebook.com/Givenchy" target="_blank">FACEBOOK</a></li>
+                            <li><a href="https://twitter.com/givenchy" target="_blank">TWITTER</a></li>
+                            <li><a href="https://www.youtube.com/user/givenchychannel" target="_blank">YOUTUBE</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="rightContainer">
+                    <h4>SUBSCRIBE TO NEWSLETTER</h4>
+                    <form>
+                        <div class="footerSearchInput">
+                            <input type="text" placeholder="Search by city or postcode">
+                            <button type="submit">Search</button> 
+                        </div>
+                    </form> 
+                    <select>
+                        <option>COUNTRY &amp; LANGUAGE</option>
+                        <option>South Korea</option>
+                        <option>English</option>
+                    </select>           
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

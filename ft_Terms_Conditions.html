@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIVENCHY</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="js/givenchy.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    
+    <div id="createAccountPanel">
+        <input type="button" value="CLOSE" class='closeBtn'>
+        <fieldset>
+        <legend>CREAT ACCOUNT</legend>
+        <ul>
+            <li>
+                <label for="creatFName">FIRST NAME*</label>
+                <input type="text" id="creatFName">
+            </li>
+            <li>
+                <label for="creatlName">LAST NAME*</label>
+                <input type="text" id="creatlName">
+            </li>
+            <li>
+                <label for="createmail">EMAIL*</label>
+                <input type="email" id="createmail">
+            </li>
+            <li>
+                <label for="creatpassword">PASSWORD*</label>
+                <input type="password" id="creatpassword">
+            </li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>CONSENT TO PERSONAL DATA PROCESSING</legend>
+        <div>
+            <input type="checkbox" id="agreeCheckbox">
+            <label for="agreeCheckbox"> 
+                I agree to the collection and use of my personal data for marketing purposes
+            </label>
+        </div>
+            <input type="checkbox" id="agreetoCheckbox">
+            <label for="agreetoCheckbox">
+                I agree to the collection, disclosure or processing of my personal data for profiling purposes  
+            </label>
+    </fieldset>
+    <input type="button" value="CREAT ACCOUNT" data-panel="createAccountPanel" class="panelBtn">
+    </div>
+
+    <div id="resetPanel"> 
+        <input type="button" value="CLOSE" class="closeBtn">
+            <fieldset>
+                <legend>RESET PASSWORD REQUEST</legend>
+                <P>Provide the e-mail address of your account to receive a password reset e-mail.</P>
+                <div>
+                    <label for="email">EMAIL*</label>
+                    <input type="text" id="email">
+                </div>
+                <span>All fields marked with an * are mandatory</span>
+                <input type="button" value="RESET PASSWORD" class="resetpassword">
+            
+            </fieldset>
+    
+    </div>
+
+    <div id="loginPanel">
+        <fieldset> 
+            <legend>LOGIN</legend>
+            <div class="loginSection">
+                <div>
+                    <label for="loginemail">EMAIL*</label>
+                    <input type="text" id="loginemail" placeholder="Email">
+                </div>
+                <div>
+                    <label for="password">PASSWORD*</label>
+                    <input type="text" id="password" placeholder="Password">
+                </div> 
+            </div>
+            <div class="buttonSection">
+                <div>
+                    <input type="button" value="Forget Password" data-panel="resetPanel" class="panelBtn"> 
+                </div>
+                <div>
+                    <label for="checkbox" class="remember">
+                        Remember me
+                    <input type="checkbox" name="checkbox" id="checkbox"> 
+                    </label>
+                </div>  
+                 <div>
+                    <input type="button" value="LOGIN" data-panel="">
+                </div>
+            </div>
+            <div class="createAccountArea">
+                <h4>CREATE ACCOUNT</h4>
+                <P>- Add your favorite items to your wishlist</P>
+                <P>- Save your contact informations for a faster checkout</P>
+                <P>- Check your order status</P>
+            </div>
+            <div class="btnSection">
+                <div>
+                    <input type="button" value="CREAT ACCOUNT" data-panel="createAccountPanel" class="panelBtn" >
+                </div>
+                    <input type="button" value="CLOSE" class='closeBtn'> 
+            </div>
+        </fieldset>
+    </div>
+
+    <div id="addtobagPanel">
+        <input type="button" value="CLOSE" class='closeBtn'>
+        <div>
+            <h2>Shopping Cart</h2>
+            <form action="p_checkout.html">
+                <div class="cart">
+                    <div class="cart-products">
+                        <div class="product">
+                            <img src="images/wGift_Antigon-aToy_bag_in_Box_leather01.png" alt="Antigon-aToy_bag_in_Box_leather">
+                            <div class="product-info">
+                                <span>New</span>
+                                <p>Medium Voyou Chain bag in leather</p>
+                                <p>Color <span>Red</span></p>
+                                <div class="countComponent">
+                                    <input type="button" value="subtract">
+                                    <span>1</span>
+                                    <input type="button" value="add">
+                                    <p>$2800</p>
+                                </div>
+                                <div class="remove">
+                                    <input type="button" value="Remove" class="btn_remove">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-total">
+                    <div>
+                        <span>SUBTOTAL</span>
+                        <span>$2800</span>
+                    </div>
+                    <div>
+                        <span>TOTAL</span>
+                        <span>$2800</span>
+                    </div>
+                    <a href="p_checkout.html">Process to Checkout</a>
+                    <!-- <input type="submit" value="Process to Checkout"> -->
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="searchPanel">
+        <h4><a href="index.html">GIVENCHY</a></h4>
+        <div>
+            <input type="button" value="CLOSE" class='closeBtn'>
+            <div>
+                <input type="text" name="userSearch" id="search" placeholder="Product Search">  
+            </div>
+            <ul>
+                <li>
+                    <img src="images/search-bag-img.png" alt="search bag">
+                    <a href="list_crossbody_mini_bags.html">Bags</a>
+                </li>
+                <li>
+                    <img src="images/search-dresses-img.png" alt="search dresses">
+                    <a href="list_dresses.html">Dresses</a>
+                </li>
+                <li>
+                    <img src="images/search-jackets-img.png" alt="search jackets">
+                    <a href="list_jackets_sweatshirts.html">Jackets</a>
+                </li>
+            </ul> 
+        </div>
+    </div> 
+
+    <header>
+        <h1>
+            <a href="index.html">
+                <img src="images/Logo.png" alt="logoimg">
+            </a>
+        </h1>
+        <nav>
+            <input type="button" value="mobileFNB" class="mui">
+
+            <ul class="mobileFNB">
+                <li>
+                    <a href="list_gift-for-her.html">Gift</a>
+                </li>
+                <li>
+                    <a href="list_women.html">Women</a>
+                </li>
+                <li>
+                    <a href="list_man.html">Man</a>
+                </li>
+                <li>
+                    <a href="list_shoulder_bags.html">Bags</a>
+                </li>
+            </ul>
+            <ul>
+                <li><input type="button" value="Search" data-panel="searchPanel" class="panelBtn"></li>
+                <li><input type="button" value="Login" data-panel="loginPanel" class="panelBtn"></li>
+                <li><input type="button" value="My Bag" data-panel="addtobagPanel" class="panelBtn"></li>
+            </ul>  
+        </nav>
+    </header>
+
+    <div class="legalContainer">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="ft_Privacy_Policy.html" >Privacy Policy</a></li>
+                <li><a href="ft_Cookie_Policy.html">Cookie Policy</a></li>
+                <li><a href="ft_General_terms_conditions.html">General terms & conditions of sale</a></li>
+                <li><a href="ft_Terms_Conditions.html" class="active">Terms & Conditions</a></li>
+                <li><a href="ft_Anti_Counterfeit.html">Anti-Counterfeit</a></li>
+                <li><a href=https://www.lvmh.com/group/about-lvmh/ethics-compliance target="_blank">Ethics & Compliance</a></li>
+            </ul>
+        </nav>
+
+            <div class="Terms_Conditions"> 
+            <h2>LEGAL NOTICE AND GENERAL TERMS AND CONDITIONS OF USE</h2> 
+       <div class="box"> 
+        <h2>I-Legal Notice</h2> 
+        <p><span>The givenchy.com site is produced and published by GIVENCHY, a French public limited company (S.A.) with a capital of 3,000,000 euros, registered with the Paris Trade and Companies Register under number 552 051 229, and with its registered office located at 3, avenue George V-75008 Paris, France.<br> Telephone: +33 (0)1 44 31 50 00<br> Email: contact@givenchy.com<br> Publications Director: Renaud de Lesquen<br> Editor: Renaud de Lesquen<br> Individual VAT number: FR 46 552 051 229<br> SIRET Number: 552 051 229 00011<br> Site hosted by: Demandware, LLC-5 Wall Street, Burlington, MA 01803, USA, telephone: +1 781-425-1400</span></p> 
+       </div> 
+       <div class="box"> 
+        <h2>II-General Terms and Conditions of Use</h2> 
+        <p><span> Use of the givenchy.com website and the purchase of products offered on givenchy.com are subject to these General Terms and Conditions of Use of the givenchy.com website (“General Terms and Conditions of Use”). By using the givenchy.com website, you acknowledge that you have read, understood and accepted without reservation these General Terms and Conditions of Use. In addition, by using the givenchy.com website you acknowledge the confidentiality clauses of the givenchy.com website (see “Security and Confidentiality”).<br> <br> GIVENCHY may at any time modify and update these General Terms and Conditions of Use and the Privacy and the Cookie Policies . The General Terms and Conditions of Use and the Privacy and the Cookie Policies in force at the time of use of the Givenchy.com website are those that are binding upon you.<br> <br> We advise you to keep yourself regularly informed of the current terms and conditions. You may at any time read the current version of the General Terms and Conditions of Use or the Privacy and the Cookie Policies charter by clicking on the relevant tabs.<br> &nbsp; </span></p> 
+       </div> 
+       <ol class="ordered-list"> 
+        <li class="box"> <h2>1. Security and Confidentiality</h2> <p>The Privacy and the Cookie Policies &nbsp;governs the use of personal information that you agree to communicate to GIVENCHY on this website. GIVENCHY may modify its Privacy and Cookie Policies” at any time, as specified in this document.&nbsp;<br> <br> The givenchy.com website is not intended for minors.</p> </li> 
+        <li class="box"> <h2>2. Intellectual Property</h2> </li> 
+        <li class="box"> <h3>2.1 The Website</h3> <p>The Website and any software necessarily used in association with it may contain confidential information as well as data protected by intellectual property law. Unless otherwise stipulated, the intellectual property rights to the documents and any data of any kind contained on the Website and the individual elements that make up the Website (images, illustrations, sounds, texts, graphical elements, charter, etc.), including software, databases and newsletters, are the exclusive property of GIVENCHY (hereinafter the “Content”), which does not grant any license or any right other than to consult the Website. Reproduction of all or part of the Content is solely permitted for personal and private use for information purposes, any reproduction and use of copies made for any other purpose whatsoever and in any form whatsoever being expressly prohibited. It is also prohibited to copy, modify, create a derivative work, assemble, decompile (except in the cases provided for by law), sell, assign, sublicense or transfer in any way the rights attached to the Content. It is also prohibited to modify all or part of the Content and the software in particular or to use modified versions of the software, particularly to obtain unauthorized access to the service and to access the Website by any means other than the interface which is provided to the Visitor by GIVENCHY for this purpose.</p> </li> 
+        <li class="box"> <h3>2.2. Brand Names</h3> <p>It is hereby stated that GIVENCHY is the owner of the GIVENCHY brand name and its logos.<br> The user acknowledges the exclusive rights of GIVENCHY to the GIVENCHY brand name and shall refrain from making any use of it and more generally from infringing upon the intellectual property rights of GIVENCHY. GIVENCHY reserves the right to claim damages in the event of counterfeiting and more generally of infringement upon its intellectual property rights. Similarly, the visitor shall refrain from infringing upon any property rights, particularly intellectual property rights, which may be held by any company in the group to which GIVENCHY belongs. GIVENCHY partners are owners of their brand names.<br> Any use whatsoever of the brand names and/or logos and/or any other content is subject to the express authorization of GIVENCHY or the holder of the intellectual property rights concerned.</p> </li> 
+        <li class="box"> <h3>2.3. Hypertext links</h3> <p>The Website may include links to other websites or other Internet sources. As GIVENCHY is unable to control these websites and external sources, GIVENCHY may not be held responsible for the availability of these websites and external sources, and will not bear any responsibility for their content, advertising, products, services or any other information or data that is available on or from these websites or external sources. In addition, GIVENCHY may not be held responsible for any damage or loss, whether proven or alleged, as a result of or in relation to the use or having trusted the content, goods or services available on these websites or external services.<br> Any creation of links to the GIVENCHY Website, any framing of the Website, and more generally any use of an element that makes up the Website, is subject to the prior and express authorization of GIVENCHY which can be revoked at any time at its sole discretion. GIVENCHY reserves the right to (i) request the removal of any link to the Website that has not been or is no longer authorized, and (ii) to seek damages and interests suffered as a result.</p> </li> 
+        <li class="box"> <h2>3. Responsibility</h2> <p>The visitor shall be personally responsible for the implementation of the computing and telecommunications resources enabling access to the Website and the knowledge necessary for Internet access and for use of the GIVENCHY Website.<br> <br> The visitor uses the Website at his/her own risk. GIVENCHY shall in no event be held responsible to you or to any third party for any indirect, incidental, special or incidental damages— including, without limitation, any loss of profit or other indirect loss— resulting from your use of the givenchy.com website or your inability to use it. This limitation of responsibility applies to the fullest extent permitted by law.</p> </li> 
+        <li class="box"> <h2>4. Absence of Guarantee</h2> <p>GIVENCHY cannot guarantee or affirm:</p> 
+         <ul> 
+          <li>that the givenchy.com website is free of viruses, data overwriting programs, Trojan horses or other destructive content,</li> 
+          <li>that the information contained on the givenchy.com website is accurate, complete or up to date.</li> 
+         </ul> <p>The givenchy.com website may contain technical inaccuracies or other defects, and GIVENCHY does not guarantee the correction of these defects. The givenchy.com website and the content of this site are presented “as is” and “based on availability.” GIVENCHY expressly excludes any form of guarantee, including, without limitation, any implied guarantee in respect of the general conditions of use of the givenchy.com website or the website's suitability for normal use or for a specific use, its quality, or its compliance with all legal provisions. This limitation of responsibility applies to the fullest extent permitted by law.</p> </li> 
+        <li class="box"> <h2>5. Visitor Behavior</h2> <p>Every visitor must use the Internet responsibly, courteously and with respect for the rights of other Internet users.<br> Accordingly, the visitor, by accessing the Website, shall in particular refrain from:</p> 
+         <ul> 
+          <li>uploading to the Website, posting, sending by e-mail or otherwise transmitting content that is illegal, prejudicial, threatening, abusive, harassing, criminal, defamatory, vulgar, obscene, contrary to accepted principles of morality, odious or objectionable or offensive from a racial, ethnic or other point of view, or invades the privacy of a person, including his or her right of personal portrayal;</li> 
+          <li>uploading to the Website, posting, sending by e-mail or otherwise transmitting unsolicited or unauthorized advertising or promotional material, “print ads,” “false information,” “chain letters,” or any other form of solicitation;</li> 
+          <li>uploading to the Website, posting, emailing or transmitting by any means any item containing software viruses or other computer codes, files or programs designed to interrupt, destroy or limit the functionality of any software or hardware or any telecommunications equipment;</li> 
+          <li>disrupting or interrupting the Website or the servers or networks connected to the Website, or infringing upon the requirements, procedures, rules or regulations of the networks connected to the Website;</li> 
+          <li>attempting to infringe upon the service of any user, host or network, including, but not limited to, exposing the Website to a virus, creating saturation, flooding the server, saturating e-mails or falsifying any header of the TCP/IP protocol information packet or any part of the header information contained in any e-mail;</li> 
+          <li>accessing data which is not intended for the Visitor or entering a server/account which the Visitor is not authorized to access;</li> 
+          <li>attempting to probe, scan or test the vulnerability of a system or network, or to breach security or authentication measures without authorization;</li> 
+          <li>misusing the identity of another person;</li> 
+          <li>carrying out an activity or inciting a third party to carry out an illegal activity or any other activity that would infringe upon the rights of GIVENCHY, its suppliers, partners, distributors, advertisers or any other Visitor;</li> 
+          <li>transmitting or transferring (by any means whatsoever) information or software derived from the Website, particularly to other countries or foreign nationals in violation of a national or international law or regulation.</li> 
+         </ul> <p>Recognizing the global nature of the Internet, each Visitor agrees to abide by all local and international rules and procedures relating to online behavior and acceptable content, including all applicable laws regarding the transmission of technical data.</p> <p>At any time and for any reason, GIVENCHY may use any means necessary to terminate the use of the Website or any of the services of GIVENCHY, without notice, for any conduct violating these terms of use, without prejudice to any damages and interest which GIVENCHY reserves the right to claim from the Visitor in case of non-compliance with the General Terms and Conditions of Use of the Website.</p> </li> 
+        <li class="box"> <h2>6. Applicable Law – Disputes</h2> <p>These General Terms and Conditions of Use are governed and interpreted according to French law in accordance with EC regulation 593/2008 of 17 June 2008.</p><br> <p>In the event of any dispute resulting from the use of the Website, you have the option of using a conventional mediation procedure or any other alternative dispute resolution procedure.</p><br> <p>In the event of a dispute, in accordance with the provisions of Regulation No. 44/2001 of 22 December 2000:</p> 
+         <ul> 
+          <li>you may refer the case either to the court where you are domiciled or to the French courts,</li> 
+          <li>GIVENCHY may refer the case to the court where you are domiciled.</li> 
+         </ul> <p>GIVENCHY reserves the right to request and obtain injunctions or ordinances to defend its rights hereunder.<br> If any provision of these General Terms and Conditions of Use is deemed invalid by a court of competent jurisdiction, the invalidity of such provision shall not affect the validity of the remaining provisions of these General Terms and Conditions of Use which shall remain in full force and effect. No waiver of any term of these General Terms and Conditions of Use shall be deemed a further or continuing waiver of such term or any other term, and our failure to assert any right or provision under these General Terms and Conditions of Use shall not constitute a waiver of such right or provision. To the extent permitted by applicable laws, you and we agree that any cause of action arising out of or related to the website must commence within one (1) year after the cause of action accrues. Otherwise, such cause of action is permanently barred.<br> We advise you to keep yourself regularly informed of the current terms and conditions. You can read the current version of the General Terms and Conditions of Use at any time by clicking on the “Legal notices” link.<br> In the event of any inconsistency between the provisions of the French version of the General Terms and Conditions of Use, the Privacy and the Cookie“ ” Policies and the General Terms and Conditions of Sale, and those provided in another language, the French version shall prevail.<br> For any information, you may also contact Customer Service at 00 800 0000 1952 (at the price of a call to a landline number of the geographic region called) during the business hours of the service indicated in the “Contact us” section.</p> </li> 
+        <li class="box"> <h2>III-Gender Equality Index</h2> <p>We are proud to announce that Givenchy has achieved a score of 96 out of 100 on the Gender Equality Index for the year 2022.<br> Our score reflects our commitment to professional equality and diversity. We are taking concrete action to promote gender diversity within our company, in particular with regard to the recruitment, training, and career development of our employees. This index breaks down as follows:</p> </li> 
+       </ol> 
+       <ul> 
+        <li>Gender pay gap 36/40 points</li> 
+        <li>Gap in individual pay rises 20/20 points</li> 
+        <li>Gap in the distribution of promotions 15/15 points</li> 
+        <li>The percentage of employees receiving a pay rise after returning from maternity leave 15/15 points</li> 
+        <li>Number of employees of the under-represented sex in the top 10 10/10 points</li> 
+       </ul> 
+       <p>We are convinced that professional equality is a major issue and we will continue to work actively to promote this value within our company.</p> 
+       <br> 
+       <p>Version dated: March 1, 2022</p> 
+            </div>
+    </div>
+  
+    <footer>
+        <div>
+            <a href="index.html" class="mainlogo">GIVENCHY</a>
+            <div class="footerWrapper">
+                <div class="leftContainer">
+                    <div>
+                        <h4>STORE LOCATOR</h4>
+                        <P>Enter a location to find the nearest GIVENCHY Stores</P>
+                        <form>
+                            <div>
+                                <input type="text" placeholder="Search by city or postcode">
+                                <button type="submit">Search</button> 
+                            </div>
+                        </form>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="ft_contect.html">CONTECT US</a></li>
+                            <li><a href="ft_Privacy_Policy.html">LEGEL</a></li>
+                            <li><a href="ft_about.html">ABOUT</a></li>
+                            <li><a href="ft_customer_survice.html">CUSTOMER SURVICE</a></li> 
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="https://www.instagram.com/givenchy/" target="_blank">INSTAGRAM</a></li>
+                            <li><a href="https://www.facebook.com/Givenchy" target="_blank">FACEBOOK</a></li>
+                            <li><a href="https://twitter.com/givenchy" target="_blank">TWITTER</a></li>
+                            <li><a href="https://www.youtube.com/user/givenchychannel" target="_blank">YOUTUBE</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="rightContainer">
+                    <h4>SUBSCRIBE TO NEWSLETTER</h4>
+                    <form>
+                        <div class="footerSearchInput">
+                            <input type="text" placeholder="Search by city or postcode">
+                            <button type="submit">Search</button> 
+                        </div>
+                    </form> 
+                    <select>
+                        <option>COUNTRY &amp; LANGUAGE</option>
+                        <option>South Korea</option>
+                        <option>English</option>
+                    </select>           
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
